@@ -13,7 +13,7 @@ const App = ()=>{
     return(
         <ScrollView>
         <View>
-            <Image ></Image>
+        <Image ></Image>
         <Text></Text>
         </View>
         </ScrollView>
