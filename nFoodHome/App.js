@@ -28,12 +28,14 @@ const styles = StyleSheet.create({
     container : {
         flex:1,
         backgroundColor : "#000000",
+        alignItems: "center",
+        justifyContent : "center",
     },
 
     image1 : {
         flex : 1,
-        height: 900,
-        width: 300,
+        height: 1200,
+        width: 500,
         opacity : 0.8,
         
     },
