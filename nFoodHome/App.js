@@ -8,6 +8,9 @@ import {
 const App = ()=>{
     return(
         <>
+        <View>
+        <Text></Text>
+        </View>
         </>
     )
 }
