@@ -12,10 +12,13 @@ import unsplash from './Assets/unsplash.jpg';
 const App = ()=>{
     return(
         <ScrollView>
-        <View>
-            <Image source = {unsplash} styles = {styles.container} ></Image>
+        
+        <Image source = {unsplash} style = {styles.container} ></Image>
+        <View style = {styles.bar} >
+
         <Text></Text>
         </View>
+        
         </ScrollView>
     )
 }
@@ -24,5 +27,9 @@ export default App;
 const styles = StyleSheet.create({
     container : {
         flex:1,
+    },
+    bar : {
+      width : 400,
+      
     }
 })
