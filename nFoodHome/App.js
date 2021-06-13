@@ -13,8 +13,7 @@ const App = ()=>{
     return(
         <ScrollView styles= {styles.container}>
         <View>
-            <Image source = {unsplash} styles = {styles.image1} ></Image>
-        <Text></Text>
+        <Image source = {unsplash} styles = {styles.image1} ></Image>
         </View>
         </ScrollView>
     )
