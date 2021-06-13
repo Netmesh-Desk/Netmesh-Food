@@ -12,7 +12,7 @@ const App = ()=>{
     return(
         <ScrollView>
         <View>
-            <Image source = {unsplash} ></Image>
+            <Image source = "unsplash" ></Image>
         <Text></Text>
         </View>
         </ScrollView>
