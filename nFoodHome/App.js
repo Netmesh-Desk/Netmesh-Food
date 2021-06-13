@@ -32,10 +32,10 @@ const styles = StyleSheet.create({
 
     image1 : {
         flex : 1,
-        height: 800,
-        width: 500,
+        height: 900,
+        width: 300,
         opacity : 0.8,
-        resizeMode: 'cover',
+        
     },
 
 })
