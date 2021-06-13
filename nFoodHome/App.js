@@ -11,9 +11,9 @@ import unsplash from './Assets/unsplash.jpg';
 
 const App = ()=>{
     return(
-        <ScrollView styles= {styles.container}>
+        <ScrollView style= {styles.container}>
         <View>
-        <Image source = {unsplash} styles = {styles.image1} ></Image>
+        <Image source = {unsplash} style = {styles.image1} ></Image>
         </View>
         </ScrollView>
     )
