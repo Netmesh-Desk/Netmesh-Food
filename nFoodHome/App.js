@@ -11,12 +11,11 @@ import unsplash from './Assets/unsplash.jpg';
 
 const App = ()=>{
     return(
-        <><View  style = {styles.container}>
-             <Image source = {unsplash} style = {styles.image1} ></Image>
-            <ScrollView >
-       
-        
-        
+        <>
+        <View style = {styles.container}>
+        <Image source = {unsplash} style = {styles.image1} ></Image>
+        <ScrollView>
+        <Text>hello</Text>
         </ScrollView>
         </View>
         </>
@@ -28,16 +27,13 @@ const styles = StyleSheet.create({
     container : {
         flex:1,
         backgroundColor : "#000000",
-        alignItems: "center",
-        justifyContent : "center",
     },
 
     image1 : {
-        flex : 1,
-        height: 1200,
-        width: 500,
-        opacity : 0.8,
         
+        height: 900,
+        width: 500,
+        opacity : 0.5,
     },
 
 })
