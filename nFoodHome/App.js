@@ -14,8 +14,9 @@ import logo from './Assets/logo.jpeg';
 const App = ()=>{
     return(
         <View style = {styles.container}>
-            <View style = {styles.textContainer}><Text style = {styles.text}>N Food              
-            <Image source = {logo} style = {styles.imageLogo}></Image></Text>
+            <View style = {styles.textContainer}>
+                <Text style = {styles.text}>N Food </Text>
+                <Image source = {logo} style = {styles.imageLogo}></Image>
             </View>
         <ImageBackground source = {unsplash} style = {styles.image1} >
         <ScrollView>
@@ -49,17 +50,21 @@ const styles = StyleSheet.create({
         paddingLeft :15,
     },
     textContainer : {
-        height : 50,
+        height : 60,
         width : 500,
         backgroundColor : "#FFF",
+        flexDirection : "row",
         
     },
     imageLogo : {
-        width :30,
-        height:30,
-        paddingLeft :80,
-        justifyContent : "flex-end",
-        alignItems:"flex-end",
+        width :40,
+        height:40,
+        flexDirection : "row",
+        marginLeft : 210,
+        marginTop : 8,
+        borderRadius :20,
+        
+
     }
 
 })
