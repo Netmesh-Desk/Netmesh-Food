@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         
         height: 900,
         width: 500,
-        opacity : 0.5,
+        opacity : 0.4,
     },
 
 })
