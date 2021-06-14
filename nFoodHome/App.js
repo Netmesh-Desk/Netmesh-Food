@@ -19,9 +19,27 @@ const App = ()=>{
                 <Image source = {logo} style = {styles.imageLogo}></Image>
             </View>
         <ImageBackground source = {unsplash} style = {styles.image1} >
-        <ScrollView>
+        <ScrollView style = {styles.scrollContainer}>
             <View style = {styles.card1}> 
-            <View style = {styles.innerCard1}></View>
+            <View style = {styles.innerCard1}>
+                <Text style = {styles.cardtext}>Bhukkhad</Text>
+            </View>
+            </View>
+            
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>The Foodie</Text>
+            </View>
+            </View>
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>Flaves</Text>
+            </View>
+            </View>
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>Dominos</Text>
+            </View>
             </View>
         </ScrollView>
         </ImageBackground>
@@ -67,6 +85,9 @@ const styles = StyleSheet.create({
         marginTop : 8,
         borderRadius :20,
     },
+    scrollContainer: {
+        flex:1,
+    },
 
     card1 : {
         backgroundColor : "#FFF",
@@ -81,7 +102,14 @@ const styles = StyleSheet.create({
         height : 40,
         width : 170,
         marginTop : 100,
-    }
+    },
+    cardtext: {
+        fontSize: 20,
+        textAlign: "center",
+        color : "#FFF",
+        padding :6,
+    },
+  
 
 
 })
