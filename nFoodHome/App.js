@@ -20,6 +20,9 @@ const App = ()=>{
             </View>
         <ImageBackground source = {unsplash} style = {styles.image1} >
         <ScrollView>
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}></View>
+            </View>
         </ScrollView>
         </ImageBackground>
        
@@ -39,13 +42,13 @@ const styles = StyleSheet.create({
         
         height: 900,
         width: 500,
-        opacity : 0.4,
+       
     },
     text : {
         fontSize : 28,
         color : "#000000",
         fontWeight : "bold",
-        fontFamily: "Roboto",
+        fontFamily:  "Roboto",
         paddingTop:8,
         paddingLeft :15,
     },
@@ -63,8 +66,22 @@ const styles = StyleSheet.create({
         marginLeft : 210,
         marginTop : 8,
         borderRadius :20,
-        
+    },
 
+    card1 : {
+        backgroundColor : "#FFF",
+        height : 140,
+        width : 170,
+        marginTop : 30,
+        marginLeft : 20,
+
+    },
+    innerCard1 : {
+        backgroundColor : "#242B2E",
+        height : 40,
+        width : 170,
+        marginTop : 100,
     }
+
 
 })
