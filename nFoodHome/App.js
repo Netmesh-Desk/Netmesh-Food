@@ -6,19 +6,23 @@ import {
     TouchableOpacity,
     StyleSheet,
     ScrollView,
+    ImageBackground,
 } from 'react-native';
 import unsplash from './Assets/unsplash.jpg';
 
 const App = ()=>{
     return(
-        <>
-        <View style = {styles.container}>
-        <Image source = {unsplash} style = {styles.image1} ></Image>
         <ScrollView>
+        <View style = {styles.container}>
+     
+       
+        {/* <ImageBackground source = {unsplash} style = {styles.image1} ></ImageBackground>
+  */}
         <Text>hello</Text>
-        </ScrollView>
         </View>
-        </>
+        </ScrollView>
+       
+        
     )
 }
 export default App;
