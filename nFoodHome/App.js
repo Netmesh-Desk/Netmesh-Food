@@ -20,7 +20,7 @@ const App = ()=>{
                 <Image source = {logo} style = {styles.imageLogo}></Image>
             </View>
             
-        <ImageBackground source = {unsplash} style = {styles.image1} >
+        {/* <ImageBackground source = {unsplash} style = {styles.image1} > */}
         
        
 
@@ -74,7 +74,7 @@ const App = ()=>{
             </View>
 
         </ScrollView>
-        </ImageBackground>
+        {/* </ImageBackground> */}
         
        </View>
       </>
