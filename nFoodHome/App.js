@@ -13,16 +13,21 @@ import logo from './Assets/logo.jpeg';
 
 const App = ()=>{
     return(
+        <>
         <View style = {styles.container}>
             <View style = {styles.textContainer}>
                 <Text style = {styles.text}>N Food </Text>
                 <Image source = {logo} style = {styles.imageLogo}></Image>
             </View>
+            
         <ImageBackground source = {unsplash} style = {styles.image1} >
+        
+       
+
         <ScrollView style = {styles.scrollContainer}>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
-                <Text style = {styles.cardtext}>Bhukkhad</Text>
+            <Text style = {styles.cardtext}>Bhukkhad</Text>
             </View>
             </View>
             
@@ -31,22 +36,18 @@ const App = ()=>{
             <Text style = {styles.cardtext}>The Foodie</Text>
             </View>
             </View>
+
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>Flaves</Text>
             </View>
             </View>
+
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>Dominos</Text>
             </View>
             </View>
-            <View style = {styles.card1}> 
-            <View style = {styles.innerCard1}>
-            <Text style = {styles.cardtext}>The Foodie</Text>
-            </View>
-            </View>
-
 
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
@@ -71,19 +72,12 @@ const App = ()=>{
             <Text style = {styles.cardtext}>The Foodie</Text>
             </View>
             </View>
-
-            <View style = {styles.card2}> 
-            <View style = {styles.innerCard2}>
-            <Text style = {styles.cardtext}>The Foodie</Text>
-            </View>
-            </View>
-
 
         </ScrollView>
         </ImageBackground>
-       
-        </View>
-      
+        
+       </View>
+      </>
     )
 }
 export default App;
@@ -124,28 +118,25 @@ const styles = StyleSheet.create({
         borderRadius :20,
     },
     scrollContainer: {
-        flex:1,
+        
         flexDirection : "row",
         flexWrap : "wrap",
-        
-        
     
-        
     },
 
     card1 : {
         backgroundColor : "#FFF",
         height : 140,
-        width : 170,
+        width : 150,
         marginTop : 30,
-        marginLeft : 20,
-    
+        marginLeft : 10,
+        
 
     },
     innerCard1 : {
         backgroundColor : "#242B2E",
         height : 40,
-        width : 170,
+        width : 150,
         marginTop : 100,
     },
     cardtext: {
@@ -154,24 +145,5 @@ const styles = StyleSheet.create({
         color : "#FFF",
         padding :6,
     },
-
-    card2 : {
-        backgroundColor : "#FFF",
-        height : 640,
-        width : 570,
-        marginTop : 30,
-        marginLeft : 20,
-        
-    
-        
-    },
-    innerCard1 : {
-        backgroundColor : "#242B2E",
-        height : 40,
-        width : 170,
-        marginTop : 100,
-    },
   
-
-
 })
