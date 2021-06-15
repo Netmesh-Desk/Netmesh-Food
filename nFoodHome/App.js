@@ -138,19 +138,20 @@ const styles = StyleSheet.create({
         paddingLeft :15,
     },
     textContainer : {
-        height : 60,
-        width : 500,
+        height : "10%",
+        width : "100%",
         backgroundColor : "#FFF",
         flexDirection : "row",
         
     },
     imageLogo : {
-        width :40,
-        height:40,
+        width :"13%",
+        height:"80%",
         flexDirection : "row",
-        marginLeft : 210,
-        marginTop : 8,
-        borderRadius :20,
+        alignItems: "flex-end",
+        marginHorizontal : 190,
+        marginTop : 7,
+        borderRadius :30,
     },
     scrollContainer: {
         flexDirection : "row",
@@ -160,8 +161,8 @@ const styles = StyleSheet.create({
 
     card1 : {
         backgroundColor : "#FFF",
-        height : 140,
-        width : 150,
+        height:140,
+        width : "50%",
         margin : 22,
         
 
@@ -169,7 +170,7 @@ const styles = StyleSheet.create({
     innerCard1 : {
         backgroundColor : "#242B2E",
         height : 40,
-        width : 150,
+        width : "100%",
         marginTop : 100,
     },
     cardtext: {
