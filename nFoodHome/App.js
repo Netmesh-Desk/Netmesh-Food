@@ -41,6 +41,44 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Dominos</Text>
             </View>
             </View>
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>The Foodie</Text>
+            </View>
+            </View>
+
+
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>The Foodie</Text>
+            </View>
+            </View>
+
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>The Foodie</Text>
+            </View>
+            </View>
+
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>The Foodie</Text>
+            </View>
+            </View>
+
+            <View style = {styles.card1}> 
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>The Foodie</Text>
+            </View>
+            </View>
+
+            <View style = {styles.card2}> 
+            <View style = {styles.innerCard2}>
+            <Text style = {styles.cardtext}>The Foodie</Text>
+            </View>
+            </View>
+
+
         </ScrollView>
         </ImageBackground>
        
@@ -87,6 +125,12 @@ const styles = StyleSheet.create({
     },
     scrollContainer: {
         flex:1,
+        flexDirection : "row",
+        flexWrap : "wrap",
+        
+        
+    
+        
     },
 
     card1 : {
@@ -95,6 +139,7 @@ const styles = StyleSheet.create({
         width : 170,
         marginTop : 30,
         marginLeft : 20,
+    
 
     },
     innerCard1 : {
@@ -108,6 +153,23 @@ const styles = StyleSheet.create({
         textAlign: "center",
         color : "#FFF",
         padding :6,
+    },
+
+    card2 : {
+        backgroundColor : "#FFF",
+        height : 640,
+        width : 570,
+        marginTop : 30,
+        marginLeft : 20,
+        
+    
+        
+    },
+    innerCard1 : {
+        backgroundColor : "#242B2E",
+        height : 40,
+        width : 170,
+        marginTop : 100,
     },
   
 
