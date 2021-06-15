@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
         
     },
     imageLogo : {
-        width :"13%",
+        width :"14%",
         height:"80%",
         flexDirection : "row",
         alignItems: "flex-end",
@@ -162,10 +162,10 @@ const styles = StyleSheet.create({
     card1 : {
         backgroundColor : "#FFF",
         height:140,
-        width : "50%",
-        margin : 22,
+        width : "100%",
+       marginHorizontal:13,
+        marginVertical:13,
         
-
     },
     innerCard1 : {
         backgroundColor : "#242B2E",
