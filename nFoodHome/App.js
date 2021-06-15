@@ -23,7 +23,7 @@ const App = ()=>{
         {/* <ImageBackground source = {unsplash} style = {styles.image1} > */}
         
        
-
+        
         <ScrollView style = {styles.scrollContainer}>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
