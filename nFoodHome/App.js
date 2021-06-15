@@ -24,55 +24,90 @@ const App = ()=>{
         
        
         
-        <ScrollView style = {styles.scrollContainer}>
-            <View style = {styles.card1}> 
-            <View style = {styles.innerCard1}>
+        <ScrollView >
+            <View style = {styles.scrollContainer}>
+            <View >
+            <View style = {styles.card1}>
+            <View style = {styles.innerCard1}> 
             <Text style = {styles.cardtext}>Bhukkhad</Text>
             </View>
+            <Image source = {require("./Assets/bhukkhad.png")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80, 
+                position : "absolute",borderColor : "#000000", borderWidth :1}}></Image>
             </View>
-            
+            </View>
+            <View>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>The Foodie</Text>
             </View>
+            <Image source = {require("./Assets/Foodie.jpg")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
-
+            </View>
+            <View>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
-            <Text style = {styles.cardtext}>Flaves</Text>
+            <Text style = {styles.cardtext}>The Flaves</Text>
+            </View>
+            <Image source = {require("./Assets/flaves.jpg")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
-
+            <View>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>Dominos</Text>
             </View>
+            <Image source = {require("./Assets/dominos.jpg")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
-
+            </View>
+             <View>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
-            <Text style = {styles.cardtext}>The Foodie</Text>
+            <Text style = {styles.cardtext}>Adda</Text>
+            </View>
+            <Image source = {require("./Assets/adda.png")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                 position : "absolute", borderColor : "#FFF", borderWidth :1}}></Image>
             </View>
             </View>
-
+            <View>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
-            <Text style = {styles.cardtext}>The Foodie</Text>
+            <Text style = {styles.cardtext}>Moments</Text>
+            </View>
+            <Image source = {require("./Assets/moments.png")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
-
+            <View>
+            <View style = {styles.card1}> 
+            <View></View>
+            <View style = {styles.innerCard1}>
+            <Text style = {styles.cardtext}>BBQ</Text>
+            </View>
+            <Image source = {require("./Assets/bbq.jpg")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
+            </View>
+            </View>
+            <View>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
-            <Text style = {styles.cardtext}>The Foodie</Text>
+            <Text style = {styles.cardtext}>Kaveri</Text>
+            </View>
+            <Image source = {require("./Assets/kaveri.jpg")} 
+                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
-
-            <View style = {styles.card1}> 
-            <View style = {styles.innerCard1}>
-            <Text style = {styles.cardtext}>The Foodie</Text>
             </View>
-            </View>
-
         </ScrollView>
         {/* </ImageBackground> */}
         
@@ -118,18 +153,16 @@ const styles = StyleSheet.create({
         borderRadius :20,
     },
     scrollContainer: {
-        
         flexDirection : "row",
         flexWrap : "wrap",
-    
+        marginTop : 20,
     },
 
     card1 : {
         backgroundColor : "#FFF",
         height : 140,
         width : 150,
-        marginTop : 30,
-        marginLeft : 10,
+        margin : 22,
         
 
     },
@@ -141,9 +174,10 @@ const styles = StyleSheet.create({
     },
     cardtext: {
         fontSize: 20,
-        textAlign: "center",
+        textAlign : "right",
         color : "#FFF",
         padding :6,
+        marginRight : 4,
     },
   
 })
