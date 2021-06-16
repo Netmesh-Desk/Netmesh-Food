@@ -36,6 +36,7 @@ const App = ()=>{
                 position : "absolute",borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
+            
             <View>
             <View style = {styles.card1}> 
             <View style = {styles.innerCard1}>
@@ -134,36 +135,37 @@ const styles = StyleSheet.create({
         color : "#000000",
         fontWeight : "bold",
         fontFamily:  "Roboto",
-        paddingTop:8,
+        paddingTop:11,
         paddingLeft :15,
     },
     textContainer : {
-        height : "10%",
+        height : "8%",
         width : "100%",
         backgroundColor : "#FFF",
         flexDirection : "row",
         
     },
     imageLogo : {
-        width :"14%",
-        height:"80%",
+        width :"10%",
+        height:"70%",
         flexDirection : "row",
         alignItems: "flex-end",
-        marginHorizontal : 190,
-        marginTop : 7,
+        marginHorizontal : 200,
+        marginTop : 9,
         borderRadius :30,
     },
     scrollContainer: {
         flexDirection : "row",
         flexWrap : "wrap",
         marginTop : 20,
+
     },
 
     card1 : {
         backgroundColor : "#FFF",
-        height:"30%",
-        width : "90%",
-        margin : 25,
+        height:"33%",
+        width : 155,
+        margin : 20,
        
         
     },
@@ -175,7 +177,7 @@ const styles = StyleSheet.create({
     },
     cardtext: {
         fontSize: 20,
-        textAlign : "center",
+        textAlign : "right",
         color : "#FFF",
         padding :6,
         marginRight : 4,
