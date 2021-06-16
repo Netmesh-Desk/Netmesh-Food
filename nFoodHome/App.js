@@ -161,10 +161,10 @@ const styles = StyleSheet.create({
 
     card1 : {
         backgroundColor : "#FFF",
-        height:140,
-        width : "100%",
-       marginHorizontal:13,
-        marginVertical:13,
+        height:"30%",
+        width : "90%",
+        margin : 25,
+       
         
     },
     innerCard1 : {
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     },
     cardtext: {
         fontSize: 20,
-        textAlign : "right",
+        textAlign : "center",
         color : "#FFF",
         padding :6,
         marginRight : 4,
