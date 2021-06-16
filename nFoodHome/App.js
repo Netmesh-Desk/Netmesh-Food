@@ -163,9 +163,9 @@ const styles = StyleSheet.create({
 
     card1 : {
         backgroundColor : "#FFF",
-        height:"33%",
-        width : 155,
-        margin : 20,
+        height:140,
+        width : "100%",
+        margin : 25,
        
         
     },
