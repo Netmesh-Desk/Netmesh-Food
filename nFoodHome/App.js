@@ -36,7 +36,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Bhukkhad</Text>
             </View>
             <Image source = {require("./Assets/bhukkhad.png")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
                 position : "absolute",borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -49,7 +49,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>The Foodie</Text>
             </View>
             <Image source = {require("./Assets/Foodie.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -61,7 +61,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>The Flaves</Text>
             </View>
             <Image source = {require("./Assets/flaves.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -73,7 +73,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Dominos</Text>
             </View>
             <Image source = {require("./Assets/dominos.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -85,7 +85,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Adda</Text>
             </View>
             <Image source = {require("./Assets/adda.png")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#FFF", borderWidth :1}}></Image>
             </View>
             </View>
@@ -97,7 +97,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Moments</Text>
             </View>
             <Image source = {require("./Assets/moments.png")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -109,7 +109,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>BBQ</Text>
             </View>
             <Image source = {require("./Assets/bbq.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -121,7 +121,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Kaveri</Text>
             </View>
             <Image source = {require("./Assets/kaveri.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -163,13 +163,13 @@ const styles = StyleSheet.create({
         
     },
     imageLogo : {
-        width : widthToDp(11),
-        height:heightToDp(6),
+        width : widthToDp(10),
+        height:heightToDp(5),
         flexDirection : "row",
         alignItems: "flex-end",
         marginHorizontal : widthToDp(55),
-        marginTop : heightToDp(1),
-        borderRadius : widthToDp(9),
+        marginTop : heightToDp(1.5),
+        borderRadius : widthToDp(8),
     },
     scrollContainer: {
         flexDirection : "row",
