@@ -10,6 +10,8 @@ import {
 } from 'react-native';
 import unsplash from './Assets/unsplash.jpg';
 import logo from './Assets/logo.jpeg';
+import { widthToDp, heightToDp } from './dimension';
+
 
 const App = ()=>{
     return(
@@ -32,7 +34,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Bhukkhad</Text>
             </View>
             <Image source = {require("./Assets/bhukkhad.png")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80, 
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
                 position : "absolute",borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -43,7 +45,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>The Foodie</Text>
             </View>
             <Image source = {require("./Assets/Foodie.jpg")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -53,8 +55,8 @@ const App = ()=>{
             <Text style = {styles.cardtext}>The Flaves</Text>
             </View>
             <Image source = {require("./Assets/flaves.jpg")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
-                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
             <View>
@@ -63,8 +65,8 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Dominos</Text>
             </View>
             <Image source = {require("./Assets/dominos.jpg")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
-                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
              <View>
@@ -73,7 +75,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Adda</Text>
             </View>
             <Image source = {require("./Assets/adda.png")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#FFF", borderWidth :1}}></Image>
             </View>
             </View>
@@ -83,7 +85,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Moments</Text>
             </View>
             <Image source = {require("./Assets/moments.png")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -94,7 +96,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>BBQ</Text>
             </View>
             <Image source = {require("./Assets/bbq.jpg")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -104,7 +106,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Kaveri</Text>
             </View>
             <Image source = {require("./Assets/kaveri.jpg")} 
-                style ={{width:40, height : 40, borderRadius : 30 ,marginLeft : 4,marginTop:80,
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -131,56 +133,55 @@ const styles = StyleSheet.create({
        
     },
     text : {
-        fontSize : 28,
+        fontSize : widthToDp(8),
         color : "#000000",
         fontWeight : "bold",
         fontFamily:  "Roboto",
-        paddingTop:11,
-        paddingLeft :15,
+        paddingTop:heightToDp(1.2),
+        paddingLeft :widthToDp(4),
     },
     textContainer : {
-        height : "8%",
-        width : "100%",
+        height : heightToDp(8),
+        width : widthToDp(100),
         backgroundColor : "#FFF",
         flexDirection : "row",
         
     },
     imageLogo : {
-        width :"10%",
-        height:"70%",
+        width : widthToDp(11),
+        height:heightToDp(6),
         flexDirection : "row",
         alignItems: "flex-end",
-        marginHorizontal : 200,
-        marginTop : 9,
+        marginHorizontal : widthToDp(55),
+        marginTop : heightToDp(1),
         borderRadius :30,
     },
     scrollContainer: {
         flexDirection : "row",
         flexWrap : "wrap",
-        marginTop : 20,
+        marginTop : heightToDp(4),
 
     },
 
     card1 : {
         backgroundColor : "#FFF",
-        height:140,
-        width : "100%",
-        margin : 25,
-       
-        
+        height:heightToDp(23),
+        width : widthToDp(41),
+        marginLeft:widthToDp(6),
+       marginBottom :heightToDp(4),
     },
     innerCard1 : {
         backgroundColor : "#242B2E",
-        height : 40,
-        width : "100%",
-        marginTop : 100,
+        height : heightToDp(6),
+        width : widthToDp(41),
+        marginTop : heightToDp(17),
     },
     cardtext: {
         fontSize: 20,
         textAlign : "right",
         color : "#FFF",
         padding :6,
-        marginRight : 4,
+        marginRight : widthToDp(4),
     },
   
 })
