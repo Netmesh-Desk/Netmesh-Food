@@ -29,6 +29,7 @@ const App = ()=>{
         <ScrollView >
             <View style = {styles.scrollContainer}>
             <View >
+            <TouchableOpacity>   
             <View style = {styles.card1}>
             <Image source = { require("./Assets/cover1.jpg") }
             style = {styles.coverImage}></Image>
@@ -36,12 +37,15 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Bhukkhad</Text>
             </View>
             <Image source = {require("./Assets/bhukkhad.png")} 
-                style ={{width:widthToDp(10.1), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
+                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
                 position : "absolute",borderColor : "#000000", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity> 
             </View>
             
+            
             <View>
+                <TouchableOpacity>
             <View style = {styles.card1}> 
             <Image source = { require("./Assets/cover2.jpg") }
             style = {styles.coverImage}></Image>
@@ -52,8 +56,10 @@ const App = ()=>{
                 style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity>
             </View>
             <View>
+                <TouchableOpacity>
             <View style = {styles.card1}>
             <Image source = { require("./Assets/cover3.jpg") }
             style = {styles.coverImage}></Image>
@@ -64,8 +70,10 @@ const App = ()=>{
                 style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity>
             </View>
             <View>
+                <TouchableOpacity>
             <View style = {styles.card1}> 
             <Image source = { require("./Assets/cover4.png") }
             style = {styles.coverImage}></Image>
@@ -76,8 +84,10 @@ const App = ()=>{
                 style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity>
             </View>
              <View>
+                 <TouchableOpacity>
             <View style = {styles.card1}>
             <Image source = { require("./Assets/cover5.jpg") }
             style = {styles.coverImage}></Image>
@@ -85,11 +95,13 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Adda</Text>
             </View>
             <Image source = {require("./Assets/adda.png")} 
-                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.5), height : heightToDp(5.2), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#FFF", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity>
             </View>
             <View>
+                <TouchableOpacity>
             <View style = {styles.card1}>
             <Image source = { require("./Assets/cover6.jpg") }
             style = {styles.coverImage}></Image>
@@ -100,8 +112,10 @@ const App = ()=>{
                 style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity>
             </View>
             <View>
+                <TouchableOpacity>
             <View style = {styles.card1}> 
             <Image source = { require("./Assets/cover7.jpg") }
             style = {styles.coverImage}></Image>
@@ -112,8 +126,10 @@ const App = ()=>{
                 style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity>
             </View>
             <View>
+                <TouchableOpacity>
             <View style = {styles.card1}> 
             <Image source = { require("./Assets/cover8.jpg") }
             style = {styles.coverImage}></Image>
@@ -124,7 +140,9 @@ const App = ()=>{
                 style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
+            </TouchableOpacity>
             </View>
+            
             </View>
         </ScrollView>
         
