@@ -22,7 +22,7 @@ const App = ()=>{
                 <Image source = {logo} style = {styles.imageLogo}></Image>
             </View>
             
-        {/* <ImageBackground source = {unsplash} style = {styles.image1} > */}
+        
         
        
         
@@ -127,7 +127,7 @@ const App = ()=>{
             </View>
             </View>
         </ScrollView>
-        {/* </ImageBackground> */}
+        
         
        </View>
       </>
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
         
         height: 900,
         width: 500,
-       
+    
     },
     text : {
         fontSize : widthToDp(8),
