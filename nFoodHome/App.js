@@ -30,83 +30,98 @@ const App = ()=>{
             <View style = {styles.scrollContainer}>
             <View >
             <View style = {styles.card1}>
+            <Image source = { require("./Assets/cover1.jpg") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}> 
             <Text style = {styles.cardtext}>Bhukkhad</Text>
             </View>
             <Image source = {require("./Assets/bhukkhad.png")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
                 position : "absolute",borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
             
             <View>
             <View style = {styles.card1}> 
+            <Image source = { require("./Assets/cover2.jpg") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>The Foodie</Text>
             </View>
             <Image source = {require("./Assets/Foodie.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
             <View>
-            <View style = {styles.card1}> 
+            <View style = {styles.card1}>
+            <Image source = { require("./Assets/cover3.jpg") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>The Flaves</Text>
             </View>
             <Image source = {require("./Assets/flaves.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
             <View>
             <View style = {styles.card1}> 
+            <Image source = { require("./Assets/cover4.png") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>Dominos</Text>
             </View>
             <Image source = {require("./Assets/dominos.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                 position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
              <View>
-            <View style = {styles.card1}> 
+            <View style = {styles.card1}>
+            <Image source = { require("./Assets/cover5.jpg") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>Adda</Text>
             </View>
             <Image source = {require("./Assets/adda.png")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#FFF", borderWidth :1}}></Image>
             </View>
             </View>
             <View>
-            <View style = {styles.card1}> 
+            <View style = {styles.card1}>
+            <Image source = { require("./Assets/cover6.jpg") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>Moments</Text>
             </View>
             <Image source = {require("./Assets/moments.png")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
             <View>
             <View style = {styles.card1}> 
-            <View></View>
+            <Image source = { require("./Assets/cover7.jpg") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>BBQ</Text>
             </View>
             <Image source = {require("./Assets/bbq.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
             <View>
             <View style = {styles.card1}> 
+            <Image source = { require("./Assets/cover8.jpg") }
+            style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}>
             <Text style = {styles.cardtext}>Kaveri</Text>
             </View>
             <Image source = {require("./Assets/kaveri.jpg")} 
-                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : 30 ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
+                style ={{width:widthToDp(10.4), height : heightToDp(5.6), borderRadius : widthToDp(9) ,marginLeft : widthToDp(1),marginTop:heightToDp(14),
                  position : "absolute", borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
@@ -154,7 +169,7 @@ const styles = StyleSheet.create({
         alignItems: "flex-end",
         marginHorizontal : widthToDp(55),
         marginTop : heightToDp(1),
-        borderRadius :30,
+        borderRadius : widthToDp(9),
     },
     scrollContainer: {
         flexDirection : "row",
@@ -165,16 +180,21 @@ const styles = StyleSheet.create({
 
     card1 : {
         backgroundColor : "#FFF",
-        height:heightToDp(23),
-        width : widthToDp(41),
-        marginLeft:widthToDp(6),
-       marginBottom :heightToDp(4),
+        height:heightToDp(22),
+        width : widthToDp(43),
+        marginLeft:widthToDp(4.2),
+        marginBottom :heightToDp(4),
+        margin :widthToDp(1.3),
+        borderRadius : widthToDp (6),
+      
     },
     innerCard1 : {
         backgroundColor : "#242B2E",
         height : heightToDp(6.5),
-        width : widthToDp(41),
-        marginTop : heightToDp(17),
+        width : widthToDp(43),
+        marginBottom: heightToDp(2),
+        borderBottomEndRadius : widthToDp(6),
+        borderBottomStartRadius : widthToDp (6),
     },
     cardtext: {
         fontSize: 20,
@@ -182,6 +202,12 @@ const styles = StyleSheet.create({
         color : "#FFF",
         padding :6,
         marginRight : widthToDp(2),
+    },
+    coverImage : {
+        width :  widthToDp(43),
+        height:heightToDp(16),
+       borderTopLeftRadius : widthToDp(6),
+       borderTopRightRadius : widthToDp(6),
     },
   
 })
