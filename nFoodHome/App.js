@@ -36,7 +36,7 @@ const App = ()=>{
             <Text style = {styles.cardtext}>Bhukkhad</Text>
             </View>
             <Image source = {require("./Assets/bhukkhad.png")} 
-                style ={{width:widthToDp(10.3), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
+                style ={{width:widthToDp(10.1), height : heightToDp(5.3), borderRadius : widthToDp(10) ,marginLeft : widthToDp(1),marginTop:heightToDp(14), 
                 position : "absolute",borderColor : "#000000", borderWidth :1}}></Image>
             </View>
             </View>
