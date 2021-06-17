@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     },
     innerCard1 : {
         backgroundColor : "#242B2E",
-        height : heightToDp(6),
+        height : heightToDp(6.5),
         width : widthToDp(41),
         marginTop : heightToDp(17),
     },
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
         textAlign : "right",
         color : "#FFF",
         padding :6,
-        marginRight : widthToDp(4),
+        marginRight : widthToDp(2),
     },
   
 })
