@@ -144,6 +144,13 @@ const App = ()=>{
             </View>
             
             </View>
+
+            <View> 
+                <Text style = {{color : "#FFF", alignSelf : "center", margin : 25, 
+                fontSize : widthToDp(4.5), borderBottomWidth : 0.18,
+                 borderBottomColor : "#19480B",paddingBottom : 9}}> Serving Happiness! </Text>
+
+            </View>
         </ScrollView>
         
         
@@ -166,18 +173,21 @@ const styles = StyleSheet.create({
     
     },
     text : {
-        fontSize : widthToDp(8),
-        color : "#000000",
+        fontSize : widthToDp(6),
+        color : "#E0E0E0",
         fontWeight : "bold",
         fontFamily:  "Roboto",
-        paddingTop:heightToDp(1.2),
-        paddingLeft :widthToDp(4),
+        paddingTop:heightToDp(1.8),
+        paddingLeft :widthToDp(5),
     },
     textContainer : {
         height : heightToDp(8),
         width : widthToDp(100),
-        backgroundColor : "#FFF",
+        backgroundColor : "#151515",
         flexDirection : "row",
+        borderBottomWidth : 0.18,
+        borderBottomColor : "#19480B",
+        
         
     },
     imageLogo : {
@@ -202,7 +212,7 @@ const styles = StyleSheet.create({
         width : widthToDp(41),
         marginLeft:widthToDp(4.2),
         marginBottom :heightToDp(4),
-        margin :widthToDp(1.3),
+        margin :widthToDp(2.2),
         borderRadius : widthToDp (6),
       
     },
