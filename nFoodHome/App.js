@@ -6,7 +6,7 @@ import {
     TouchableOpacity,
     StyleSheet,
     ScrollView,
-    ImageBackground,
+    StatusBar,
 } from 'react-native';
 import unsplash from './Assets/unsplash.jpg';
 import logo from './Assets/logo.jpeg';
@@ -16,6 +16,7 @@ import { widthToDp, heightToDp } from './dimension';
 const App = ()=>{
     return(
         <>
+        <StatusBar backgroundColor = {"#000000"}/>
         <View style = {styles.container}>
             <View style = {styles.textContainer}>
                 <Text style = {styles.text}>N Food </Text>
@@ -146,9 +147,9 @@ const App = ()=>{
             </View>
 
             <View> 
-                <Text style = {{color : "#FFF", alignSelf : "center", margin : 25, 
+                <Text style = {{color : "#929491", alignSelf : "center", margin : 25, 
                 fontSize : widthToDp(4.5), borderBottomWidth : 0.18,
-                 borderBottomColor : "#19480B",paddingBottom : 9}}> Serving Happiness! </Text>
+                 borderBottomColor : "#19480B",paddingBottom : widthToDp(2.7)}}> Serving Happiness! </Text>
 
             </View>
         </ScrollView>
@@ -208,8 +209,8 @@ const styles = StyleSheet.create({
 
     card1 : {
         backgroundColor : "#FFF",
-        height:heightToDp(20),
-        width : widthToDp(41),
+        height:heightToDp(22),
+        width : widthToDp(43),
         marginLeft:widthToDp(4.2),
         marginBottom :heightToDp(4),
         margin :widthToDp(2.2),
