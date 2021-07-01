@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-native-gesture-handler';
 import {
     View,
     Text,
@@ -9,13 +10,13 @@ import {
     StatusBar,
 } from 'react-native';
 
-import 'react-native-gesture-handler';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './screens/Home';
 import Menu from './screens/Menu';
-import OrderSummary from './Screens/OrderSummary';
+import OrderSummary from './screens/OrderSummary';
 import Address from './screens/Order';
 
 import logo from './Assets/logo.jpeg';
