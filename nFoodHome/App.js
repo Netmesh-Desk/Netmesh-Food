@@ -27,24 +27,17 @@ const Stack = createStackNavigator();
 const App = ()=>{
     return(
         <>
-        {/* <View style = {styles.container}>
-            <View style = {styles.textContainer}>
-                <Text style = {styles.text}>N Food </Text>
-                <Image source = {logo} style = {styles.imageLogo}></Image>
-            </View>
-
-       </View> */}
        <NavigationContainer>
       <Stack.Navigator initialRouteName = "Home">
       <Stack.Screen name = "Home" component = {Home}
       options = {{
         headerStyle : {
-          backgroundColor : "#03203C",
+        backgroundColor : "#151515",
         },
         title : 'N Food',
         headerTitleStyle : {
-          textAlign : "center",
-          color : "#12B0E8"
+        textAlign : "left",
+        color : "#FFF"
         }
       }}></Stack.Screen>
 
@@ -82,7 +75,7 @@ const App = ()=>{
           color : "#12B0E8"
         }
       }}></Stack.Screen>
-      <Stack.Screen name = "Order" component = {Order}
+      {/* <Stack.Screen name = "Order" component = {Order}
       options = {{
         headerStyle : {
           backgroundColor : "#03203C",
@@ -92,7 +85,7 @@ const App = ()=>{
           textAlign : "center",
           color : "#12B0E8"
         }
-      }}></Stack.Screen>
+      }}></Stack.Screen> */}
       </Stack.Navigator>
     </NavigationContainer>
       </>

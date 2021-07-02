@@ -12,8 +12,10 @@ import logo from './Assets/logo.jpeg';
 import { widthToDp, heightToDp } from './dimension';
 
 const Home = ()=> {
+    return(
     <>
     <StatusBar backgroundColor = {"#000000"}/>
+    <View style = {styles.container}>
     <ScrollView >
             <View style = {styles.scrollContainer}>
             <View >
@@ -140,8 +142,8 @@ const Home = ()=> {
 
             </View>
         </ScrollView>
-        
-    </>
+        </View>
+    </>)
 }
 
 const styles = StyleSheet.create({
@@ -223,3 +225,5 @@ const styles = StyleSheet.create({
     },
   
 })
+
+export default Home;
