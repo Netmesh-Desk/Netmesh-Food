@@ -10,7 +10,6 @@ import {
     StatusBar,
 } from 'react-native';
 
-
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -33,6 +32,8 @@ const App = ()=>{
       options = {{
         headerStyle : {
         backgroundColor : "#151515",
+        borderBottomWidth : 0.18,
+        borderBottomColor : "#19480B",
         },
         title : 'N Food',
         headerTitleStyle : {

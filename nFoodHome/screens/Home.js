@@ -11,17 +11,19 @@ import {
 import logo from './Assets/logo.jpeg';
 import { widthToDp, heightToDp } from './dimension';
 
-const Home = ()=> {
+const Home = (navigation, route)=> {
     return(
     <>
     <StatusBar backgroundColor = {"#000000"}/>
     <View style = {styles.container}>
     <ScrollView >
             <View style = {styles.scrollContainer}>
-            <View >
-            <TouchableOpacity activeOpacity={1.0}>   
+            <View>
+            <TouchableOpacity activeOpacity={1.0}
+             onPress = {() => navigation.navigate("Menu")}>   
             <View style = {styles.card1}>
             <Image source = { require("./Assets/cover1.jpg") }
+           
             style = {styles.coverImage}></Image>
             <View style = {styles.innerCard1}> 
             <Text style = {styles.cardtext}>Bhukkhad</Text>
