@@ -6,12 +6,13 @@ import { widthToDp, heightToDp } from './dimension';
 
 const Menu = ({navigation})=>{
 
-    // const [foodNum , setFoodNum ] = useState(0)
+    const [foodNum , setFoodNum ] = useState(0)
+  
 
-    // const increase = ()=>{
-    //     foodNum = foodNum + 1; 
-    // }
 
+    const increase = ()=> setFoodNum(foodNum + 1 ) 
+    const decrease = ()=> setFoodNum(foodNum - 1 )
+    
     return(
         <>
         <ScrollView backgroundColor = "#000000">
@@ -19,14 +20,15 @@ const Menu = ({navigation})=>{
         <Text style = {{color : "#D1D1D1",  marginLeft : 16, marginTop : 38, fontSize : widthToDp(3.5), }}> Order Food On </Text>
         <Text style = {{color : "#FFF",  marginTop : 4, marginLeft : 10, fontSize : widthToDp(9) }}> Bhukkhad! </Text>
 
-    
+         <ScrollView>
         <Text style = {{color : "#E1E1E1",  marginTop : 105, marginLeft : 30, fontSize : widthToDp(5) }}> 1. Veg Biryani  </Text>
 
         <View style = {{ flexDirection : "row"}}>
-
+        <TouchableOpacity onPress = {decrease}>
         < Text style = {styles.minus}> - </Text>
-        <Text style = {{color: "#FFF", fontSize : 22, marginTop : 25, height : 40 , width : 40, paddingLeft : 20}}> 0 </Text>
-        <TouchableOpacity >
+        </TouchableOpacity>
+        <Text style = {{color: "#FFF", fontSize : 22, marginTop : 25, height : 40 , width : 40, paddingLeft : 20}}> {foodNum ? foodNum : 0} </Text>
+        <TouchableOpacity onPress = {increase}>
         < Text style = {styles.plus}> + </Text>
         </TouchableOpacity>
 
@@ -52,6 +54,9 @@ const Menu = ({navigation})=>{
         < Text style = {styles.plus}> + </Text>
 
         </View>
+
+        
+        </ScrollView>
         <TouchableOpacity onPress = {() => navigation.navigate("OrderSummary")} >
         <Text style = {{  fontSize : widthToDp(5) , height : 47 , width : 130 , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
          alignSelf :"center", marginTop : 40, paddingTop : 10, paddingLeft : 18, borderRadius : 22 }}> View Cart </Text>
