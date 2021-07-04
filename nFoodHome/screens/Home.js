@@ -11,7 +11,7 @@ import {
 import logo from './Assets/logo.jpeg';
 import { widthToDp, heightToDp } from './dimension';
 
-const Home = (navigation, route)=> {
+const Home = ({navigation})=> {
     return(
     <>
     <StatusBar backgroundColor = {"#000000"}/>

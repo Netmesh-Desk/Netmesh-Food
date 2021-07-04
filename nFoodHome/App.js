@@ -44,25 +44,34 @@ const App = ()=>{
 
       <Stack.Screen name = "Menu" component = {Menu}
       options = {{
+        headerTintColor : "#D1D1D1",
         headerStyle : {
-          backgroundColor : "#03203C",
+          backgroundColor : "#151515",
+          borderBottomWidth : 0.18,
+          borderBottomColor : "#19480B",
+          
+        
         },
         title : 'N Food ',
         headerTitleStyle : {
-          textAlign : "center",
-          color : "#12B0E8"
+          textAlign : "left",
+          color : "#FFF"
         }
       }}></Stack.Screen>
 
       <Stack.Screen name = "OrderSummary" component = {OrderSummary}
       options = {{
+        headerTintColor : "#D1D1D1",
         headerStyle : {
-          backgroundColor : "#03203C",
+          backgroundColor : "#151515",
+          borderBottomWidth : 0.18,
+          borderBottomColor : "#19480B",
+          
         },
-        title : 'N Food',
+        title : 'Order Summary',
         headerTitleStyle : {
-          textAlign : "center",
-          color : "#12B0E8"
+          textAlign : "left",
+          color : "#FFF"
         }
       }}></Stack.Screen>
       <Stack.Screen name = "Address" component = {Address}
