@@ -87,7 +87,7 @@ const App = ()=>{
           color : "#FFF",
         }
       }}></Stack.Screen>
-      <Stack.Screen name = "ConfirmedOrder" component = {ConfirmedOrder}
+      {/* <Stack.Screen name = "ConfirmedOrder" component = {ConfirmedOrder}
       options = {{
         headerStyle : {
           backgroundColor : "#03203C",
@@ -97,7 +97,7 @@ const App = ()=>{
           textAlign : "center",
           color : "#12B0E8"
         }
-      }}></Stack.Screen>
+      }}></Stack.Screen> */}
       </Stack.Navigator>
     </NavigationContainer>
       </>
