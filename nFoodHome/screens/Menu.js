@@ -2,16 +2,27 @@ import React , {useState} from 'react';
 import {Text , ScrollView , StyleSheet , TouchableOpacity , View} from 'react-native';
 import { RotationGestureHandler } from 'react-native-gesture-handler';
 import { widthToDp, heightToDp } from './dimension';
+import Snackbar from 'react-native-snackbar';
 
 
 const Menu = ({navigation})=>{
 
     const [foodNum , setFoodNum ] = useState(0)
   
+    const increase = ()=> {
+    setFoodNum(foodNum + 1)
+     if (foodNum > 9)
+    {   (setFoodNum(10))
+        return Snackbar.show({
+            text : "Kitna Khayega Bhai",
+            backgroundColor: "#0B4801",
+            textColor: "FFF",
+            textAlign: "center",});
+    }}
 
-
-    const increase = ()=> setFoodNum(foodNum + 1 ) 
-    const decrease = ()=> setFoodNum(foodNum - 1 )
+    const decrease = ()=> {setFoodNum(foodNum - 1 )
+        if(foodNum<1)
+        {setFoodNum(0)}}
     
     return(
         <>
@@ -50,7 +61,7 @@ const Menu = ({navigation})=>{
         <View style = {{ flexDirection : "row"}}>
 
         < Text style = {styles.minus}> - </Text>
-        <Text style = {{color: "#FFF", fontSize : 22, marginTop : 25, height : 40 , width : 40, paddingLeft : 20}}> 0 </Text>
+        <Text style = {{color: "#FFF", fontSize : 22, marginTop : 25, height : 40 , width : 40, paddingLeft : 20 }}> 0 </Text>
         < Text style = {styles.plus}> + </Text>
 
         </View>

@@ -77,15 +77,17 @@ const App = ()=>{
       <Stack.Screen name = "Address" component = {Address}
       options = {{
         headerStyle : {
-          backgroundColor : "#03203C",
+          backgroundColor : "#151515",
+          borderBottomWidth : 0.18,
+          borderBottomColor : "#19480B",
         },
         title : 'N Food',
         headerTitleStyle : {
-          textAlign : "center",
-          color : "#12B0E8"
+          textAlign : "left",
+          color : "#FFF",
         }
       }}></Stack.Screen>
-      {/* <Stack.Screen name = "Order" component = {Order}
+      <Stack.Screen name = "ConfirmedOrder" component = {ConfirmedOrder}
       options = {{
         headerStyle : {
           backgroundColor : "#03203C",
@@ -95,7 +97,7 @@ const App = ()=>{
           textAlign : "center",
           color : "#12B0E8"
         }
-      }}></Stack.Screen> */}
+      }}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
       </>

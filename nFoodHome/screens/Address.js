@@ -1,10 +1,14 @@
 import React  from 'react';
-import {Text} from 'react-native';
+import {Text, ScrollView, TouchableOpacity} from 'react-native';
 
-const Address = ()=>{
+const Address = ({navigation})=>{
     return(
         <>
-        <Text>Address</Text>
+        <ScrollView backgroundColor= "#000000">
+        <TouchableOpacity onPress = {() => navigation.navigate("Order")} >
+        <Text>Hostel Name</Text>
+        </TouchableOpacity>
+        </ScrollView>
         </>
     )
 }
