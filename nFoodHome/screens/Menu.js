@@ -147,7 +147,7 @@ const Menu = ({route,navigation})=>{
         
 
          <ScrollView>
-        <Text style = {{color : "#E1E1E1",  marginTop : 105, marginLeft : 30, fontSize : widthToDp(5) }}> 1. Veg Biryani  </Text>
+        <Text style = {{color : "#E1E1E1", marginTop : heightToDp (8), marginLeft : 30, fontSize : widthToDp(5) }}> 1. Veg Biryani  </Text>
 
         <View style = {{ flexDirection : "row"}}>
         <TouchableOpacity onPress = {decrease} onPressOut = {changePriceMinus}>

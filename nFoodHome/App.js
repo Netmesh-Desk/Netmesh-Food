@@ -31,7 +31,7 @@ const App = ()=>{
     return(
         <>
        <NavigationContainer>
-      <Stack.Navigator initialRouteName = "OrderSummary">
+      <Stack.Navigator initialRouteName = "Home">
       <Stack.Screen name = "Home" component = {Home}
       options = {{
         headerStyle : {

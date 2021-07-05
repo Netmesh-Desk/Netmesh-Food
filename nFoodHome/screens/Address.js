@@ -16,20 +16,20 @@ const Address = ({navigation})=>{
     return(
         <>
         <View backgroundColor= "#000000" style = {{flex : 1}}>
-        <Text style = {{color : "#D1D1D1",  marginTop : 14, marginLeft : 10, fontSize : widthToDp(6), marginBottom : heightToDp(4), fontWeight : "bold"}}> Select your Hostel :  </Text>
-        <View style = {{paddingLeft : widthToDp(3)}}>
+        <Text style = {{color : "#D1D1D1",  marginTop : heightToDp (5), marginLeft : 12, fontSize : widthToDp(6), marginBottom : heightToDp(6), fontWeight : "bold"}}> Select your Hostel :  </Text>
+        <View style = {{paddingLeft : widthToDp(5)}}>
         <RadioForm radio_props = {hostelNames}
         initial={0}
         onPress={(value) => {}}
-        buttonColor={'#1FAA08'}
+        buttonColor={'#D1D1D1'}
         buttonSize={widthToDp(3)}
-        selectedButtonColor = {'green'}
-        labelStyle={{fontSize: 20, color: '#FFF'}}
-        radioStyle = {{marginBottom : heightToDp (2)}}
+        selectedButtonColor = {'#1FAA08'}
+        labelStyle={{fontSize: 20, color: '#D1D1D1', paddingLeft : widthToDp(5)}}
+        radioStyle = {{marginBottom : heightToDp (3)}}
         /></View>
-        <TouchableOpacity onPress = {() => navigation.navigate("ConfirmedOrder")} activeOpacity={0.7} style = {{marginTop : heightToDp(46)}} >
+        <TouchableOpacity onPress = {() => navigation.navigate("ConfirmedOrder")} activeOpacity={0.7} style = {{marginTop : heightToDp(35)}} >
         <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : widthToDp(29) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", paddingTop : 11, paddingLeft : 20, borderRadius : 9, fontWeight : "bold"}}> Proceed </Text>
+         alignSelf :"center", paddingTop : 11, paddingLeft : 10, borderRadius : 9, fontWeight : "bold"}}> Order Now </Text>
         </TouchableOpacity>
         </View>
         </>
