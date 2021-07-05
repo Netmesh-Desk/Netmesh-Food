@@ -84,12 +84,13 @@ const App = ()=>{
       }}></Stack.Screen>
       <Stack.Screen name = "Address" component = {Address}
       options = {{
+        headerTintColor : "#D1D1D1",
         headerStyle : {
           backgroundColor : "#151515",
           borderBottomWidth : 0.18,
           borderBottomColor : "#19480B",
         },
-        title : 'N Food',
+        title : 'Address',
         headerTitleStyle : {
           textAlign : "left",
           color : "#FFF",

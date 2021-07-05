@@ -16,7 +16,7 @@ const Address = ({navigation})=>{
     return(
         <>
         <View backgroundColor= "#000000" style = {{flex : 1}}>
-        <Text style = {{color : "#D1D1D1",  marginTop : 14, marginLeft : 10, fontSize : widthToDp(6), marginBottom : heightToDp(4)}}> Select your Hostel :  </Text>
+        <Text style = {{color : "#D1D1D1",  marginTop : 14, marginLeft : 10, fontSize : widthToDp(6), marginBottom : heightToDp(4), fontWeight : "bold"}}> Select your Hostel :  </Text>
         <View style = {{paddingLeft : widthToDp(3)}}>
         <RadioForm radio_props = {hostelNames}
         initial={0}
