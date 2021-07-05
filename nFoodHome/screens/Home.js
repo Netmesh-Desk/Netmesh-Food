@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import logo from './Assets/logo.jpeg';
 import { widthToDp, heightToDp } from './dimension';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Home = ({navigation})=> {
     return(

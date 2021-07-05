@@ -12,6 +12,8 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 import Home from './screens/Home';
 import Menu from './screens/Menu';
@@ -38,9 +40,11 @@ const App = ()=>{
         title : 'N Food',
         headerTitleStyle : {
         textAlign : "left",
-        color : "#FFF"
-        }
-      }}></Stack.Screen>
+        color : "#FFF",
+        },
+        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
+      }}> 
+      </Stack.Screen>
 
       <Stack.Screen name = "Menu" component = {Menu}
       options = {{
@@ -56,7 +60,8 @@ const App = ()=>{
         headerTitleStyle : {
           textAlign : "left",
           color : "#FFF"
-        }
+        },
+        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
       }}></Stack.Screen>
 
       <Stack.Screen name = "OrderSummary" component = {OrderSummary}
@@ -72,7 +77,8 @@ const App = ()=>{
         headerTitleStyle : {
           textAlign : "left",
           color : "#FFF"
-        }
+        },
+        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
       }}></Stack.Screen>
       <Stack.Screen name = "Address" component = {Address}
       options = {{
