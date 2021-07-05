@@ -8,22 +8,119 @@ import Snackbar from 'react-native-snackbar';
 const Menu = ({navigation})=>{
 
     const [foodNum , setFoodNum ] = useState(0)
+    const [foodNum2 , setFoodNum2 ] = useState(0)
+    const [foodNum3, setFoodNum3 ] = useState(0)
+    const [shouldShow, setShouldShow] = useState(false);
+    const [priceOfVB , setPriceOfVB] = useState(0)
   
     const increase = ()=> {
     setFoodNum(foodNum + 1)
-     if (foodNum > 9)
-    {   (setFoodNum(10))
-        return Snackbar.show({
-            text : "Kitna Khayega Bhai",
-            backgroundColor: "#0B4801",
-            textColor: "FFF",
-            textAlign: "center",});
-    }}
+  
+  
+}
+
+    const increase2 = ()=> {
+        setFoodNum2(foodNum2 + 1)
+    
+      
+        
+   }
+
+        const increase3 = ()=> {
+            setFoodNum3(foodNum3 + 1)
+       
+          
+          }
+        
+    
 
     const decrease = ()=> {setFoodNum(foodNum - 1 )
         if(foodNum<1)
-        {setFoodNum(0)}}
+        {setFoodNum(0)
+            return Snackbar.show({
+                text : "You cannot select the food quantity as negative LOL!",
+                backgroundColor: "#AB0606",
+                textColor: "FFF",
+                textAlign: "center",});
+            }}
+
+            const decrease2 = ()=> {setFoodNum2(foodNum2 - 1 )
+                if(foodNum2<1)
+                {setFoodNum2(0)
+                    return Snackbar.show({
+                        text : "You cannot select the food quantity as negative LOL!",
+                        backgroundColor: "#AB0606",
+                        textColor: "FFF",
+                        textAlign: "center",});
+                    }}
+
+                    const decrease3 = ()=> {setFoodNum3(foodNum3 - 1 )
+                        if(foodNum3<1)
+                        {setFoodNum3(0)
+                            return Snackbar.show({
+                                text : "You cannot select the food quantity as negative LOL!",
+                                backgroundColor: "#AB0606",
+                                textColor: "FFF",
+                                textAlign: "center",});
+                            }}
+
+     const changePricePlus = ()=> { 
+         setPriceOfVB(priceOfVB + 100)
+        
+
+     }    
+
+     
+     const changePricePlus2 = ()=> { 
+        setPriceOfVB(priceOfVB + 60)
+        
+
+
+    }    
+
+    const changePricePlus3 = ()=> { 
+        setPriceOfVB(priceOfVB + 30)
+      
+
+    }    
+
+
+     const changePriceMinus = ()=> { 
+        setPriceOfVB(priceOfVB - 100)
+        if (priceOfVB<=0)
+        {setPriceOfVB(0)}
+        if (foodNum === 0){
+            setPriceOfVB(priceOfVB)
+        }
+
+    }    
+
+    const changePriceMinus2 = ()=> { 
+        setPriceOfVB(priceOfVB - 60)
+        if (priceOfVB<=0)
+        {setPriceOfVB(0)}
+        if (foodNum2 === 0){
+            setPriceOfVB(priceOfVB)
+        }
+
+    }    
+ 
+    const changePriceMinus3 = ()=> { 
+        setPriceOfVB(priceOfVB - 30)
+        if (priceOfVB<=0)
+        {setPriceOfVB(0)}
+        if (foodNum3 === 0){
+            setPriceOfVB(priceOfVB)
+        }
+
+    }    
+
+  
+ 
+  
     
+    
+          
     return(
         <>
         <ScrollView backgroundColor = "#000000">
@@ -35,23 +132,29 @@ const Menu = ({navigation})=>{
         <Text style = {{color : "#E1E1E1",  marginTop : 105, marginLeft : 30, fontSize : widthToDp(5) }}> 1. Veg Biryani  </Text>
 
         <View style = {{ flexDirection : "row"}}>
-        <TouchableOpacity onPress = {decrease}>
+        <TouchableOpacity onPress = {decrease} onPressOut = {changePriceMinus}>
         < Text style = {styles.minus}> - </Text>
         </TouchableOpacity>
-        <Text style = {{color: "#FFF", fontSize : 22, marginTop : 25, height : 40 , width : 40, paddingLeft : 20}}> {foodNum ? foodNum : 0} </Text>
-        <TouchableOpacity onPress = {increase}>
+        <Text style = {{color: "#FFF", fontSize : 18, marginTop : 25, height : 35, width : 45, paddingLeft : 20, paddingTop : 4}}> {foodNum ? foodNum : 0} </Text>
+        <TouchableOpacity onPress = {increase} onPressIn = {()=>setShouldShow(true)} onPressOut ={changePricePlus}  >
         < Text style = {styles.plus}> + </Text>
         </TouchableOpacity>
+
+        <Text style = {{color :"#FFF", fontSize : 16, borderWidth : 0.8, height : 40 , width : 60 , borderColor : "#1FAA08", marginLeft : 70, marginTop : 19, paddingTop : 8, paddingLeft : 8, borderRadius : 10}}>₹ 100</Text>
 
          </View>
 
          <Text style = {{color : "#E1E1E1",  marginTop : 55, marginLeft : 30, fontSize : widthToDp(5) }}> 2. Egg Burger </Text>
 
          <View style = {{ flexDirection : "row"}}>
-
+        <TouchableOpacity onPress = {decrease2} onPressIn = {changePriceMinus2}>
         < Text style = {styles.minus}> - </Text>
-        <Text style = {{color: "#FFF", fontSize : 22, marginTop : 25, height : 40 , width : 40, paddingLeft : 20}}> 0 </Text>
+        </TouchableOpacity>
+        <Text style = {{color: "#FFF", fontSize : 18, marginTop : 25, height : 35 , width : 45, paddingLeft : 20, paddingTop : 4}}> {foodNum2 ? foodNum2 : 0} </Text>
+        <TouchableOpacity onPress = {increase2} onPressIn = {()=>setShouldShow(true)} onPressOut = {changePricePlus2}>
         < Text style = {styles.plus}> + </Text>
+        </TouchableOpacity>
+        <Text style = {{color :"#FFF", fontSize : 16, borderWidth : 0.8, height : 40 , width : 60 , borderColor : "#1FAA08", marginLeft : 70, marginTop : 19, paddingTop : 8, paddingLeft : 10, borderRadius : 10}}>₹ 60</Text>
 
         </View>
          
@@ -59,19 +162,29 @@ const Menu = ({navigation})=>{
         <Text style = {{color : "#E1E1E1",  marginTop : 55, marginLeft : 30, fontSize : widthToDp(5) }}> 3. Tandoori Roti </Text>
 
         <View style = {{ flexDirection : "row"}}>
-
+        <TouchableOpacity onPress = {decrease3} onPressIn = {changePriceMinus3}>
         < Text style = {styles.minus}> - </Text>
-        <Text style = {{color: "#FFF", fontSize : 22, marginTop : 25, height : 40 , width : 40, paddingLeft : 20 }}> 0 </Text>
+        </TouchableOpacity>
+        <Text style = {{color: "#FFF", fontSize : 18, marginTop : 25, height : 35 , width : 45, paddingLeft : 20 , paddingTop : 4}}> { foodNum3 ? foodNum3 : 0} </Text>
+        <TouchableOpacity onPress = {increase3} onPressOut = {()=>setShouldShow(true)} onPressIn = {changePricePlus3}>
         < Text style = {styles.plus}> + </Text>
+        </TouchableOpacity>
+        <Text style = {{color :"#FFF", fontSize : 16, borderWidth : 0.8, height : 40 , width : 60 , borderColor : "#1FAA08", marginLeft : 70, marginTop : 19, paddingTop : 8, paddingLeft : 10, borderRadius : 10}}>₹ 30</Text>
 
         </View>
 
         
         </ScrollView>
-        <TouchableOpacity onPress = {() => navigation.navigate("OrderSummary")} >
-        <Text style = {{  fontSize : widthToDp(5) , height : 47 , width : 130 , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", marginTop : 40, paddingTop : 10, paddingLeft : 18, borderRadius : 22 }}> View Cart </Text>
-        </TouchableOpacity>
+
+        <View >
+            {shouldShow ? (  <TouchableOpacity onPress = {() => navigation.navigate("OrderSummary")} >
+        <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : 350 , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
+         alignSelf :"center", marginTop : 41, paddingTop : 12, paddingLeft : 224, borderRadius : 9, fontWeight : "bold"}}> View Cart </Text>
+        </TouchableOpacity>) : null }
+
+        <Text style = {{color : "#FFF", position : 'absolute', marginTop : 54, marginLeft : 40, fontSize : 15, fontWeight : "bold"}}>₹ {priceOfVB ? priceOfVB : 0}</Text>
+      
+        </View>
 
         </ScrollView>
         </>
