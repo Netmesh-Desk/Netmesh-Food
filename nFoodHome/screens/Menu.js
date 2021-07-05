@@ -12,7 +12,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 
-const Menu = ({navigation})=>{
+const Menu = ({route,navigation})=>{
 
     const [foodNum , setFoodNum ] = useState(0)
     const [foodNum2 , setFoodNum2 ] = useState(0)
@@ -195,7 +195,9 @@ const Menu = ({navigation})=>{
         </ScrollView>
 
         <View >
-            {shouldShow ? (  <TouchableOpacity onPress = {() => navigation.navigate("OrderSummary")} activeOpacity={0.7}  >
+            {shouldShow ? (  <TouchableOpacity onPress = {() => navigation.navigate("OrderSummary" ,
+            {name1: 'Veg Biryani', itemNo1 : foodNum , name2: 'Egg Burger', itemNo2 : foodNum2 , name3: 'Tandoori Roti', itemNo3 : foodNum3 , totalPrice : priceOfVB,
+        })} activeOpacity={0.7}  >
         <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : 350 , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
          alignSelf :"center", marginTop : 41, paddingTop : 12, paddingLeft : 224, borderRadius : 9, fontWeight : "bold"}}> View Cart </Text>
         </TouchableOpacity>) : null }
