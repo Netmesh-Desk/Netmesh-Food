@@ -20,6 +20,7 @@ import Menu from './screens/Menu';
 import OrderSummary from './screens/OrderSummary';
 import Address from './screens/Address';
 import ConfirmedOrder from './screens/ConfirmedOrder';
+import loginScreenUI from './screens/loginScreenUI';
 
 
 import logo from './Assets/logo.jpeg';
@@ -31,7 +32,7 @@ const App = ()=>{
     return(
         <>
        <NavigationContainer>
-      <Stack.Navigator initialRouteName = "Home">
+      <Stack.Navigator initialRouteName = "ConfirmedOrder">
       <Stack.Screen name = "Home" component = {Home}
       options = {{
         headerStyle : {
@@ -100,6 +101,7 @@ const App = ()=>{
       }}></Stack.Screen>
       <Stack.Screen name = "ConfirmedOrder" component = {ConfirmedOrder}
       options = {{
+        headerShown : false ,
         headerStyle : {
           backgroundColor : "#151515",
           borderBottomWidth : 0.18,
@@ -113,6 +115,24 @@ const App = ()=>{
         headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
         
       }}></Stack.Screen>
+
+<Stack.Screen name = "loginScreenUI" component = {loginScreenUI}
+      options = {{
+        headerShown : false ,
+        headerStyle : {
+          backgroundColor : "#151515",
+          borderBottomWidth : 0.18,
+          borderBottomColor : "#19480B",
+        },
+        title : 'N Food',
+        headerTitleStyle : {
+          textAlign : "left",
+          color : "#FFF",
+        },
+        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
+        
+      }}></Stack.Screen>
+
       </Stack.Navigator>
     </NavigationContainer>
       </>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "676559390083",
+    "project_id": "n-food-78ab1",
+    "storage_bucket": "n-food-78ab1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676559390083:android:6858097a73b3c40f8762b6",
+        "android_client_info": {
+          "package_name": "com.netmesh.nfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676559390083-no1c9ft1p7rtudu70eun15ra8rftr5c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGdY91U6ngoD2ofe0cZRnkMl6cWWjR8C0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676559390083-no1c9ft1p7rtudu70eun15ra8rftr5c3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
