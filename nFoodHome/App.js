@@ -12,6 +12,7 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
@@ -27,11 +28,15 @@ import logo from './Assets/logo.jpeg';
 import { widthToDp, heightToDp } from './dimension';
 
 const Stack = createStackNavigator();
-
+const Drawer = createDrawerNavigator();
 const App = ()=>{
     return(
         <>
        <NavigationContainer>
+       <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="Menu" component={Menu} />
+      </Drawer.Navigator>
       <Stack.Navigator initialRouteName = "ConfirmedOrder">
       <Stack.Screen name = "Home" component = {Home}
       options = {{
@@ -45,7 +50,9 @@ const App = ()=>{
         textAlign : "left",
         color : "#FFF",
         },
-        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
+        headerRight : ()=>(  <Icon name = "user-circle" 
+        style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}
+        onPress = {()=> navigation.openDrawer()}></Icon>)
       }}> 
       </Stack.Screen>
 
