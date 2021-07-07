@@ -29,16 +29,23 @@ import { widthToDp, heightToDp } from './dimension';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
-const App = ()=>{
-    return(
-        <>
-       <NavigationContainer>
-       <Drawer.Navigator initialRouteName="Home">
+
+function DrawerNavigator () {
+  return (
+    
+      <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={Home} />
         <Drawer.Screen name="Menu" component={Menu} />
       </Drawer.Navigator>
-      <Stack.Navigator initialRouteName = "ConfirmedOrder">
-      <Stack.Screen name = "Home" component = {Home}
+      )
+}
+
+const App = ()=>{
+    return(
+        <>
+      <NavigationContainer>
+      <Stack.Navigator initialRouteName = "Home">
+      <Stack.Screen name = "Home" component = {DrawerNavigator}
       options = {{
         headerStyle : {
         backgroundColor : "#151515",
