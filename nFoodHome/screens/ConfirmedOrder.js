@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
 import { widthToDp, heightToDp } from './dimension';
 import {signUp} from '../src/action/auth'
+import Home from './Home';
 
 const ConfirmedOrder = ({navigation, signUp})=>{
   
@@ -37,7 +38,7 @@ const ConfirmedOrder = ({navigation, signUp})=>{
         paddingLeft : 20, paddingTop : 10}}></TextInput>
 
 
-         <TouchableOpacity activeOpacity = {0.5}   onPress = {()=> {navigation.navigate(Home)}} >
+         <TouchableOpacity activeOpacity = {0.5} onPress = {()=> {navigation.navigate(Home)}} >
          <Text style = {{  fontSize : widthToDp(4.5) , height : heightToDp(6.8) , width : widthToDp(27) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
          alignSelf :"center", paddingTop : heightToDp(1.49), paddingLeft : 18, borderRadius : 9, fontWeight : "bold", marginTop : heightToDp(14)}}> Sign Up</Text> 
          </TouchableOpacity>
