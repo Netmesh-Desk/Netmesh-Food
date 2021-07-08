@@ -201,7 +201,7 @@ const Menu = ({route,navigation})=>{
         <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : 350 , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
          alignSelf :"center", marginTop : 44, paddingTop : 12, paddingLeft : 224, borderRadius : 9, fontWeight : "bold"}}> View Cart </Text>
         </TouchableOpacity>) : null }
-        <Icon name = "caret-right" style = {{color:"#FFF", fontSize : 24, position : "absolute", marginTop : 53, marginLeft : 330}}></Icon>
+        <Icon name = "caret-right" style = {{color:"#FFF", fontSize : 24, position : "absolute", marginTop : 56, marginLeft : 330}}></Icon>
 
         <Text style = {{color : "#FFF", position : 'absolute', marginTop : 56, marginLeft : 40, fontSize : 15, fontWeight : "bold"}}>₹ {priceOfVB ? priceOfVB : 0}</Text>
       
