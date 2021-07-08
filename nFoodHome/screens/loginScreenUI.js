@@ -3,7 +3,7 @@ import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity} 
 import { widthToDp, heightToDp } from './dimension';
 
 
-const ConfirmedOrder = ({navigation})=>{
+const loginScreenUI = ({navigation})=>{
     
   
 
@@ -34,4 +34,4 @@ const ConfirmedOrder = ({navigation})=>{
     )
 }
 
-export default ConfirmedOrder;
+export default loginScreenUI;
