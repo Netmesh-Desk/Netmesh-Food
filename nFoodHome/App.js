@@ -8,6 +8,7 @@ import {
     StyleSheet,
     ScrollView,
     StatusBar,
+    TouchableHighlight,
 } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -34,14 +35,14 @@ const Drawer = createDrawerNavigator();
 function DrawerNavigator () {
   return (
     
-      <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Navigator initialRouteName="Home" >
         <Drawer.Screen name="Home" component={Home} />
         <Drawer.Screen name="Menu" component={Menu} />
       </Drawer.Navigator>
       )
 }
 
-const App = ()=>{
+const App = ({})=>{
     return(
         <>
       <NavigationContainer>
@@ -58,9 +59,9 @@ const App = ()=>{
         textAlign : "left",
         color : "#FFF",
         },
-        headerRight : ()=>(  <Icon name = "user-circle" 
-        style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}
-        onPress = {()=> navigation.openDrawer()}></Icon>)
+        headerRight : ()=>(
+            <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}} ></Icon> 
+         )
       }}> 
       </Stack.Screen>
 
