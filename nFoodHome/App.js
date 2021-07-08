@@ -59,19 +59,6 @@ const HomeStackScreen = ({navigation}) => (
      }}>
   <HomeStack.Screen name = "Home" component = {Home}
   options = {{
-    // headerStyle : {
-    // backgroundColor : "#151515",
-    // borderBottomWidth : 0.18,
-    // borderBottomColor : "#19480B",
-    // },
-    // title : 'N Food',
-    // headerTitleStyle : {
-    // textAlign : "left",
-    // color : "#FFF",
-    // },
-    // headerRight : ()=>(
-    //     <Icon name = "user-circle"  onPress = {()=> navigation.openDrawer()} style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}} ></Icon> 
-    //  )
   }}> 
   </HomeStack.Screen>
   </HomeStack.Navigator>
@@ -94,28 +81,38 @@ const MenuStackScreen = ()=> (
       textAlign : "left",
       color : "#FFF"
     },
+     headerRight : ()=>(  <Icon name = "user-circle"  style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
     
   }}>
   <MenuStack.Screen name = "Menu" component = {Menu}
   options = {{
-    // headerTintColor : "#D1D1D1",
-    // headerStyle : {
-    //   backgroundColor : "#151515",
-    //   borderBottomWidth : 0.18,
-    //   borderBottomColor : "#19480B",
-      
-    
-    // },
-    // title : 'N Food ',
-    // headerTitleStyle : {
-    //   textAlign : "left",
-    //   color : "#FFF"
-    // },
-    // headerRight : ()=>(  <Icon name = "user-circle"  style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
+   
   }}></MenuStack.Screen>
   </MenuStack.Navigator>
 
 
+)
+
+const orderSummaryStackScreen = ()=>(
+  <OrderSummaryStack.Navigator>
+  <OrderSummaryStack.Screen name = "OrderSummary" component = {OrderSummary}
+      options = {{
+        headerTintColor : "#D1D1D1",
+        headerStyle : {
+          backgroundColor : "#151515",
+          borderBottomWidth : 0.18,
+          borderBottomColor : "#19480B",
+          
+        },
+        title : 'Order Summary',
+        headerTitleStyle : {
+          textAlign : "left",
+          color : "#FFF"
+        },
+        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
+      }}>
+      </OrderSummaryStack.Screen>
+      </OrderSummaryStack.Navigator>
 )
 
 
@@ -129,6 +126,7 @@ const App = ({navigation})=>{
   }}>
         <Drawer.Screen name="Home" component={HomeStackScreen} />
         <Drawer.Screen name="Menu"  component={MenuStackScreen} />
+        <Drawer.Screen name="Menu"  component={orderSummaryStackScreen} />
       </Drawer.Navigator>
 
       {/* <Stack.Navigator initialRouteName = "Home">
