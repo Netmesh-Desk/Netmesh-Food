@@ -38,8 +38,7 @@ const Home = ({navigation})=> {
             
             
             <View>
-                <TouchableOpacity activeOpacity={1.0}
-                onPress = {()=> navigation.openDrawer()}>
+                <TouchableOpacity activeOpacity={1.0}>
             <View style = {styles.card1}> 
             <Image source = { require("./Assets/cover2.jpg") }
             style = {styles.coverImage}></Image>
