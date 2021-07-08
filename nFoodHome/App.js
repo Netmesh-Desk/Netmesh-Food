@@ -62,6 +62,7 @@ const App = ({navigation})=>{
         textAlign : "left",
         color : "#FFF",
         },
+       headerLeft : null,
         headerRight : ()=>(
             <Icon name = "user-circle"  onPress = {()=> navigation.openDrawer()} style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}} ></Icon> 
          )

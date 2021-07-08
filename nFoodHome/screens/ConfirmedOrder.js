@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity} from 'react-native';
+import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
 import { widthToDp, heightToDp } from './dimension';
 
 const ConfirmedOrder = ({navigation})=>{
@@ -11,6 +11,7 @@ const ConfirmedOrder = ({navigation})=>{
 
     return(
         <>
+         <StatusBar backgroundColor = {"#101010"}/>
         <ScrollView keyboardShouldPersistTaps = "handled" backgroundColor = "#101010" style = {{flex : 1 }}>
         <Text style = {{color :"#FFF", fontSize : 35, fontWeight : "bold", marginLeft: 26, marginTop: 55}}>Create Account,</Text>
         <Text style = {{color :"#E1E1E1", fontSize : 15, marginLeft: 28}}>Sign Up to get started!</Text>

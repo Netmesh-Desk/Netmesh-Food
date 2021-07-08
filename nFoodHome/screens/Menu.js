@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import {Text , ScrollView , StyleSheet , TouchableOpacity , View} from 'react-native';
+import {Text , ScrollView , StyleSheet , TouchableOpacity , View , StatusBar} from 'react-native';
 import { RotationGestureHandler } from 'react-native-gesture-handler';
 import { widthToDp, heightToDp } from './dimension';
 import Snackbar from 'react-native-snackbar';
@@ -131,6 +131,7 @@ const Menu = ({route,navigation})=>{
     return(
         <>
         <ScrollView backgroundColor = "#000000">
+        <StatusBar backgroundColor = {"#000000"}/>
        
 
         

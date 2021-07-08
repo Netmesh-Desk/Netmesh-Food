@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity} from 'react-native';
+import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
 import { widthToDp, heightToDp } from './dimension';
 
 
@@ -9,6 +9,7 @@ const loginScreenUI = ({navigation})=>{
 
     return(
         <>
+         <StatusBar backgroundColor = {"#101010"}/>
         <ScrollView keyboardShouldPersistTaps = "handled" backgroundColor = "#101010" style = {{flex : 1 }}>
         <Text style = {{color :"#FFF", fontSize : 40, fontWeight : "bold", marginLeft: 26, marginTop: 65}}>Welcome,</Text>
         <Text style = {{color :"#E1E1E1", fontSize : 15, marginLeft: 32}}>Sign In to Continue!</Text>

@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import {Text , ScrollView , StyleSheet , TouchableOpacity , View} from 'react-native';
+import {Text , ScrollView , StyleSheet , TouchableOpacity , View , StatusBar} from 'react-native';
 import { RotationGestureHandler } from 'react-native-gesture-handler';
 import { widthToDp, heightToDp } from './dimension';
 import Snackbar from 'react-native-snackbar';
@@ -9,6 +9,7 @@ import LottieView from 'lottie-react-native'
 const Done = ({navigation}) => {
     return (
         <>
+         <StatusBar backgroundColor = {"#101010"}/>
         <View backgroundColor = "#101010" style = {{flex : 1}}>
             <LottieView source = {require('../Animations/food.json')} autoPlay loop style = {{height : 300, width : 300 , alignSelf: "center", marginTop : heightToDp(10)}} ></LottieView>
             <Text style = {{color : "#D1D1D1" , alignSelf : "center", marginTop : heightToDp(8) , fontSize : 17}}> Your order is being prepared!</Text>

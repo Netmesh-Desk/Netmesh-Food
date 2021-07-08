@@ -1,5 +1,5 @@
 import React  from 'react';
-import {Text, ScrollView, TouchableOpacity,View } from 'react-native';
+import {Text, ScrollView, TouchableOpacity,View , StatusBar} from 'react-native';
 import { widthToDp, heightToDp } from './dimension';
 import RadioForm, {RadioButton, RadioButtonInput, RadioButtonLabel} from 'react-native-simple-radio-button';
 import Done from './Done';
@@ -16,6 +16,7 @@ var hostelNames = [
 const Address = ({navigation})=>{
     return(
         <>
+         <StatusBar backgroundColor = {"#000000"}/>
         <View backgroundColor= "#000000" style = {{flex : 1}}>
         <Text style = {{color : "#D1D1D1",  marginTop : heightToDp (5), marginLeft : 12, fontSize : widthToDp(6), marginBottom : heightToDp(6), fontWeight : "bold"}}> Select your Hostel :  </Text>
         <View style = {{paddingLeft : widthToDp(5)}}>
