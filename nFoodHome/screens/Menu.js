@@ -135,8 +135,8 @@ const Menu = ({route,navigation})=>{
        
 
         
-        <Text style = {{color : "#D1D1D1",  marginLeft : 16, marginTop : 38, fontSize : widthToDp(3.5), }}> Order Food On </Text>
-        <Text style = {{color : "#FFF",  marginTop : 4, marginLeft : 10, fontSize : widthToDp(9) }}> Bhukkhad! </Text>
+        <Text style = {{color : "#D1D1D1",  marginLeft : 16, marginTop : heightToDp(4), fontSize : widthToDp(3.5), }}> Order Food On </Text>
+        <Text style = {{color : "#FFF",  marginTop : heightToDp(0.8), marginLeft : 10, fontSize : widthToDp(9) }}> Bhukkhad! </Text>
         <View style = {{flexDirection:"row", marginLeft :21, marginTop : 8}}>
         <Icon name = "star" style = {{fontSize:16, color : "#1FAA08"}}></Icon>
         <Icon name = "star" style = {{fontSize:16, color : "#1FAA08" , paddingLeft : 3}}></Icon>
@@ -154,22 +154,22 @@ const Menu = ({route,navigation})=>{
         <TouchableOpacity onPress = {decrease} onPressOut = {changePriceMinus}>
         < Text style = {styles.minus}> - </Text>
         </TouchableOpacity>
-        <Text style = {{color: "#FFF", fontSize : 18, marginTop : 25, height : 35, width : 45, paddingLeft : 20, paddingTop : 4}}> {foodNum ? foodNum : 0} </Text>
+        <Text style = {{color: "#FFF", fontSize : widthToDp(5), marginTop : heightToDp(2.8),  paddingLeft : 27, paddingTop : 4}}> {foodNum ? foodNum : 0} </Text>
         <TouchableOpacity onPress = {increase} onPressIn = {()=>setShouldShow(true)} onPressOut ={changePricePlus}  >
         < Text style = {styles.plus}> + </Text>
         </TouchableOpacity>
 
-        <Text style = {{color :"#FFF", fontSize : 16, borderWidth : 0.8, height : 40 , width : 60 , borderColor : "#1FAA08", marginLeft : 70, marginTop : 19, paddingTop : 8, paddingLeft : 8, borderRadius : 10}}>₹ 100</Text>
+        <Text style = {{color :"#FFF", fontSize : widthToDp(4.2), borderWidth : 0.8, height : 40 , width : 60 , borderColor : "#1FAA08", marginLeft : 70, marginTop : 19, paddingTop : 8, paddingLeft : 8, borderRadius : 10}}>₹ 100</Text>
 
          </View>
 
-         <Text style = {{color : "#E1E1E1",  marginTop : 55, marginLeft : 30, fontSize : widthToDp(5) }}> 2. Egg Burger </Text>
+         <Text style = {{color : "#E1E1E1",  marginTop : widthToDp(9), marginLeft : 30, fontSize : widthToDp(5) }}> 2. Egg Burger </Text>
 
          <View style = {{ flexDirection : "row"}}>
         <TouchableOpacity onPress = {decrease2} onPressIn = {changePriceMinus2}>
         < Text style = {styles.minus}> - </Text>
         </TouchableOpacity>
-        <Text style = {{color: "#FFF", fontSize : 18, marginTop : 25, height : 35 , width : 45, paddingLeft : 20, paddingTop : 4}}> {foodNum2 ? foodNum2 : 0} </Text>
+        <Text style = {{color: "#FFF",  fontSize : widthToDp(5), marginTop : heightToDp(2.8),  paddingLeft : 27, paddingTop : 4}}> {foodNum2 ? foodNum2 : 0} </Text>
         <TouchableOpacity onPress = {increase2} onPressIn = {()=>setShouldShow(true)} onPressOut = {changePricePlus2}>
         < Text style = {styles.plus}> + </Text>
         </TouchableOpacity>
@@ -178,13 +178,13 @@ const Menu = ({route,navigation})=>{
         </View>
          
          
-        <Text style = {{color : "#E1E1E1",  marginTop : 55, marginLeft : 30, fontSize : widthToDp(5) }}> 3. Tandoori Roti </Text>
+        <Text style = {{color : "#E1E1E1",  marginTop : widthToDp(9), marginLeft : 30, fontSize : widthToDp(5) }}> 3. Tandoori Roti </Text>
 
         <View style = {{ flexDirection : "row"}}>
         <TouchableOpacity onPress = {decrease3} onPressIn = {changePriceMinus3}>
         < Text style = {styles.minus}> - </Text>
         </TouchableOpacity>
-        <Text style = {{color: "#FFF", fontSize : 18, marginTop : 25, height : 35 , width : 45, paddingLeft : 20 , paddingTop : 4}}> { foodNum3 ? foodNum3 : 0} </Text>
+        <Text style = {{color: "#FFF",  fontSize : widthToDp(5), marginTop : heightToDp(2.8),  paddingLeft : 27, paddingTop : 4}}> { foodNum3 ? foodNum3 : 0} </Text>
         <TouchableOpacity onPress = {increase3} onPressOut = {()=>setShouldShow(true)} onPressIn = {changePricePlus3}>
         < Text style = {styles.plus}> + </Text>
         </TouchableOpacity>
@@ -199,12 +199,12 @@ const Menu = ({route,navigation})=>{
             {shouldShow ? (  <TouchableOpacity onPress = {() => navigation.navigate("OrderSummary" ,
             {name1: 'Veg Biryani', itemNo1 : foodNum , name2: 'Egg Burger', itemNo2 : foodNum2 , name3: 'Tandoori Roti', itemNo3 : foodNum3 , totalPrice : priceOfVB,
         })} activeOpacity={0.7}  >
-        <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : 350 , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", marginTop : 44, paddingTop : 12, paddingLeft : 224, borderRadius : 9, fontWeight : "bold"}}> View Cart </Text>
+        <Text style = {{  fontSize : widthToDp(4.5) , height : heightToDp(7) , width : widthToDp(89) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
+         alignSelf :"center", marginTop : heightToDp(6), paddingTop : 12, paddingLeft : 224, borderRadius : 9, fontWeight : "bold"}}> View Cart </Text>
         </TouchableOpacity>) : null }
-        <Icon name = "caret-right" style = {{color:"#FFF", fontSize : 24, position : "absolute", marginTop : 56, marginLeft : 330}}></Icon>
+        <Icon name = "caret-right" style = {{color:"#FFF", fontSize : widthToDp(6), position : "absolute", marginTop : heightToDp(7.9), marginLeft : widthToDp(88)}}></Icon>
 
-        <Text style = {{color : "#FFF", position : 'absolute', marginTop : 56, marginLeft : 40, fontSize : 15, fontWeight : "bold"}}>₹ {priceOfVB ? priceOfVB : 0}</Text>
+        <Text style = {{color : "#FFF", position : 'absolute', marginTop : heightToDp(8), marginLeft : widthToDp(8), fontSize : widthToDp(4), fontWeight : "bold"}}>₹ {priceOfVB ? priceOfVB : 0}</Text>
       
         </View>
 

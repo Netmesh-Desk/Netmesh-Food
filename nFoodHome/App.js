@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import 'react-native-gesture-handler';
 import {
     View,
@@ -25,6 +25,8 @@ import ConfirmedOrder from './screens/ConfirmedOrder';
 import loginScreenUI from './screens/loginScreenUI';
 import Done from './screens/Done'
 
+import auth from '@react-native-firebase/auth'
+
 import logo from './Assets/logo.jpeg';
 import { widthToDp, heightToDp } from './dimension';
 
@@ -43,13 +45,16 @@ const Stack = createStackNavigator();
 // }
 
 const App = ({navigation})=>{
+
+  
     return(
         <>
       <NavigationContainer>
-      <Stack.Navigator initialRouteName = "ConfirmedOrder" 
+      <Stack.Navigator initialRouteName = "Home" 
       screenOptions = {{
         cardStyleInterpolator : CardStyleInterpolators.forHorizontalIOS
       }}>
+      
       <Stack.Screen name = "Home" component = {Home}
       options = {{
         headerStyle : {
@@ -64,7 +69,7 @@ const App = ({navigation})=>{
         },
        headerLeft : null,
         headerRight : ()=>(
-            <Icon name = "user-circle"  onPress = {()=> navigation.openDrawer()} style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}} ></Icon> 
+            <Icon name = "user-circle"  style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}} ></Icon> 
          )
       }}> 
       </Stack.Screen>
@@ -119,6 +124,23 @@ const App = ({navigation})=>{
           headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
         
       }}></Stack.Screen>
+      <Stack.Screen name = "Done" component = {Done}
+      options = {{
+        headerShown : false ,
+        headerStyle : {
+          backgroundColor : "#151515",
+          borderBottomWidth : 0.18,
+          borderBottomColor : "#19480B",
+        },
+        title : 'N Food',
+        headerTitleStyle : {
+          textAlign : "left",
+          color : "#FFF",
+        },
+        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
+        
+      }}></Stack.Screen>
+     
       <Stack.Screen name = "ConfirmedOrder" component = {ConfirmedOrder}
       options = {{
         headerShown : false ,
@@ -153,27 +175,12 @@ const App = ({navigation})=>{
         
       }}></Stack.Screen>
 
-<Stack.Screen name = "Done" component = {Done}
-      options = {{
-        headerShown : false ,
-        headerStyle : {
-          backgroundColor : "#151515",
-          borderBottomWidth : 0.18,
-          borderBottomColor : "#19480B",
-        },
-        title : 'N Food',
-        headerTitleStyle : {
-          textAlign : "left",
-          color : "#FFF",
-        },
-        headerRight : ()=>(  <Icon name = "user-circle" style = {{color : "#E1E1E1", position :"absolute", fontSize : 24, paddingRight : 18}}></Icon>)
-        
-      }}></Stack.Screen>
-
       </Stack.Navigator>
     </NavigationContainer>
       </>
+  
     )
-}
+    }
+  
 export default App;
-
+    
