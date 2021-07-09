@@ -38,7 +38,7 @@ const AppNavigator = ({navigation})=>{
         
       
         
-      <Stack.Navigator initialRouteName = "ConfirmedOrder" 
+      <Stack.Navigator initialRouteName = "Home" 
       screenOptions = {{
         cardStyleInterpolator : CardStyleInterpolators.forHorizontalIOS
       }}>
