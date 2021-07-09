@@ -34,17 +34,7 @@ import AppContainer from './src/action/index'
 
 
 const Stack = createStackNavigator();
-// const Drawer = createDrawerNavigator();
 
-// function DrawerNavigator () {
-//   return (
-    
-//       <Drawer.Navigator initialRouteName="Home">
-//         <Drawer.Screen name="Home" component={Home} />
-//         <Drawer.Screen name="Menu" component={Menu} />
-//       </Drawer.Navigator>
-//       )
-// }
 
 const App = ({navigation})=>{
 
