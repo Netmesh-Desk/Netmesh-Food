@@ -3,45 +3,19 @@ import auth from '@react-native-firebase/auth'
 import Snackbar from 'react-native-snackbar'
 import { back } from 'react-native/Libraries/Animated/Easing'
 
-export const signUp = (data) => async(dispatch) => {
-    console.log(data)
-    const {name, email, password }= data
+auth()
+  .createUserWithEmailAndPassword('jane.doe@example.com', 'SuperSecretPassword!')
+  .then(() => {
+    console.log('User account created & signed in!');
+  })
+  .catch(error => {
+    if (error.code === 'auth/email-already-in-use') {
+      console.log('That email address is already in use!');
+    }
 
-    auth().createUserWithEmailAndPassword(email,password)
-    .then((data)=>{
-        console.log(data);
-        console.log("User creation successful");
-    })
-    .catch((error)=> {
-        console.log(error)
-        Snackbar.show ({
-            text : 'SignUp Failed',
-            textColor : "#FFF",
-            backgroundColor: 'red',
-        })
-    })
-}
+    if (error.code === 'auth/invalid-email') {
+      console.log('That email address is invalid!');
+    }
 
-export const signIn = (data) => async(dispatch) => {
-    console.log(data)
-    const {email,password} = data
-
-    auth()
-    .signInWithEmailAndPassword(email,password)
-    .then(()=>{
-        console.log("Sign in Success")
-        Snackbar.show ( {
-            text : "Account SignIn",
-            textColor : "#FFF",
-            backgroundColor : "red"
-        })
-    })
-    .catch((error) => {
-        console.log(error);
-        Snackbar.show({
-            text : "SignIn Failed",
-            textColor : "#FFF",
-            backgroundColor : "red"
-        })
-    })  
-}
+    console.error(error);
+  });
