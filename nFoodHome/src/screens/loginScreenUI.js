@@ -1,8 +1,8 @@
 import React , {useState} from 'react';
 import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
 import { widthToDp, heightToDp } from './dimension';
-import Home from './Home';
-import Auth from './src/action/auth'
+import Home from '../screens/Home';
+import Auth from '../services/auth'
 
 const loginScreenUI = ({navigation})=>{
     

@@ -17,20 +17,20 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-import Home from './screens/Home';
-import Menu from './screens/Menu';
-import OrderSummary from './screens/OrderSummary';
-import Address from './screens/Address';
-import ConfirmedOrder from './screens/ConfirmedOrder';
-import loginScreenUI from './screens/loginScreenUI';
-import Done from './screens/Done'
+import Home from './src/screens/Home';
+import Menu from './src/screens/Menu';
+import OrderSummary from './src/screens/OrderSummary';
+import Address from './src/screens/Address';
+import ConfirmedOrder from './src/screens/ConfirmedOrder';
+import loginScreenUI from './src/screens/loginScreenUI';
+import Done from './src/screens/Done'
 
 import auth from '@react-native-firebase/auth'
 
-import logo from './Assets/logo.jpeg';
+
 import { widthToDp, heightToDp } from './dimension';
 import { firebase } from '@react-native-firebase/auth';
-import AppContainer from './src/action/index'
+import AppContainer from './src/navigator/index'
 
 
 const Stack = createStackNavigator();

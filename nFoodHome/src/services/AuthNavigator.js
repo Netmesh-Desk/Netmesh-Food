@@ -18,13 +18,13 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 
-import ConfirmedOrder from './screens/ConfirmedOrder';
-import loginScreenUI from './screens/loginScreenUI';
+import ConfirmedOrder from '../screens/ConfirmedOrder';
+import loginScreenUI from '../screens/loginScreenUI';
 
 
 import auth from '@react-native-firebase/auth'
 
-import logo from './Assets/logo.jpeg';
+
 import { widthToDp, heightToDp } from './dimension';
 import { firebase } from '@react-native-firebase/auth';
 
@@ -36,7 +36,7 @@ const AuthNavigator = ({navigation})=>{
 
   
     return(
-    
+      
         <Stack.Navigator initialRouteName = "ConfirmedOrder" 
         screenOptions = {{
           cardStyleInterpolator : CardStyleInterpolators.forHorizontalIOS
@@ -76,6 +76,7 @@ const AuthNavigator = ({navigation})=>{
       }}></Stack.Screen>
 
         </Stack.Navigator>
+    
         )
     }
     export default AuthNavigator;

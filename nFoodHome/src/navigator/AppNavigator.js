@@ -17,13 +17,13 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-import Home from './screens/Home';
-import Menu from './screens/Menu';
-import OrderSummary from './screens/OrderSummary';
-import Address from './screens/Address';
-import ConfirmedOrder from './screens/ConfirmedOrder';
-import loginScreenUI from './screens/loginScreenUI';
-import Done from './screens/Done'
+import Home from '../screens/Home';
+import Menu from '../screens/Menu';
+import OrderSummary from '../screens/OrderSummary';
+import Address from '../screens/Address';
+// import ConfirmedOrder from './screens/ConfirmedOrder';
+// import loginScreenUI from './screens/loginScreenUI';
+import Done from '../screens/Done'
 
 
 
@@ -37,8 +37,8 @@ const AppNavigator = ({navigation})=>{
     return(
         
       
-        
-      <Stack.Navigator initialRouteName = "Home" 
+    
+      <Stack.Navigator initialRouteName = "ConfirmedOrder" 
       screenOptions = {{
         cardStyleInterpolator : CardStyleInterpolators.forHorizontalIOS
       }}>
@@ -129,6 +129,7 @@ const AppNavigator = ({navigation})=>{
         
       }}></Stack.Screen>
     </Stack.Navigator>
+
       
 )}
 
