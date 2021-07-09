@@ -11,6 +11,7 @@ import {
 import logo from './Assets/logo.jpeg';
 import { widthToDp, heightToDp } from './dimension';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Auth from '../services/auth'
 
 const Home = ({navigation})=> {
     return(
@@ -139,10 +140,10 @@ const Home = ({navigation})=> {
             </View>
 
             <View> 
-                <Text style = {{color : "#929491", alignSelf : "center", margin : 25, 
-                fontSize : widthToDp(4.5), borderBottomWidth : 0.18,
-                 borderBottomColor : "#19480B",paddingBottom : widthToDp(2.7)}}> Serving Happiness! </Text>
-
+                <TouchableOpacity  activeOpacity={1.0} onPress = {()=>Auth.signOut()}>
+            <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : widthToDp(33) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
+         alignSelf :"center", paddingTop : 11, paddingLeft : widthToDp(5.8), borderRadius : 9, fontWeight : "bold", marginTop : heightToDp(4), marginBottom: heightToDp(10)}}> Sign Out</Text> 
+         </TouchableOpacity>
             </View>
         </ScrollView>
         </View>

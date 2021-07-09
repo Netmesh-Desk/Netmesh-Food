@@ -30,8 +30,8 @@ const Address = ({navigation})=>{
         radioStyle = {{marginBottom : heightToDp (3)}}
         /></View>
         <TouchableOpacity activeOpacity={0.7} style = {{marginTop : heightToDp(30)}} onPress = {()=>navigation.navigate("Done")} >
-        <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : widthToDp(29) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", paddingTop : 11, paddingLeft : 10, borderRadius : 9, fontWeight : "bold"}}> Order Now </Text>
+        <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : widthToDp(34) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
+         alignSelf :"center", paddingTop : 11, paddingLeft : 16, borderRadius : 9, fontWeight : "bold"}}> Order Now </Text>
         </TouchableOpacity>
         </View>
         </>

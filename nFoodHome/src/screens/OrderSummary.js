@@ -37,7 +37,7 @@ const Address = ({route, navigation})=>{
 
          <TouchableOpacity onPress = {() => navigation.navigate("Address")} activeOpacity={0.7}  >
         <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : widthToDp(40) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", marginTop : 37, paddingTop : 12, paddingLeft : 24, borderRadius : 9}}> Add Address </Text>
+         alignSelf :"center", marginTop : heightToDp(16), paddingTop : 12, paddingLeft : 22, borderRadius : 9, fontWeight: "bold"}}> Add Address </Text>
         </TouchableOpacity>
         </View>
         </>

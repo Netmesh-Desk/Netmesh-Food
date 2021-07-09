@@ -200,11 +200,11 @@ const Menu = ({route,navigation})=>{
             {name1: 'Veg Biryani', itemNo1 : foodNum , name2: 'Egg Burger', itemNo2 : foodNum2 , name3: 'Tandoori Roti', itemNo3 : foodNum3 , totalPrice : priceOfVB,
         })} activeOpacity={0.7}  >
         <Text style = {{  fontSize : widthToDp(4.5) , height : heightToDp(7) , width : widthToDp(89) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", marginTop : heightToDp(6), paddingTop : 12, paddingLeft : 224, borderRadius : 9, fontWeight : "bold"}}> View Cart </Text>
+         alignSelf :"center", marginTop : heightToDp(10), paddingTop : 14, paddingLeft : 224, borderRadius : 9, fontWeight : "bold"}}> View Cart </Text>
         </TouchableOpacity>) : null }
-        <Icon name = "caret-right" style = {{color:"#FFF", fontSize : widthToDp(6), position : "absolute", marginTop : heightToDp(7.9), marginLeft : widthToDp(88)}}></Icon>
+        <Icon name = "caret-right" style = {{color:"#FFF", fontSize : widthToDp(6), position : "absolute", marginTop : heightToDp(11.96), marginLeft : widthToDp(88)}}></Icon>
 
-        <Text style = {{color : "#FFF", position : 'absolute', marginTop : heightToDp(8), marginLeft : widthToDp(8), fontSize : widthToDp(4), fontWeight : "bold"}}>₹ {priceOfVB ? priceOfVB : 0}</Text>
+        <Text style = {{color : "#FFF", position : 'absolute', marginTop : heightToDp(12), marginLeft : widthToDp(12), fontSize : widthToDp(4.25), fontWeight : "bold"}}>₹ {priceOfVB ? priceOfVB : 0}</Text>
       
         </View>
 

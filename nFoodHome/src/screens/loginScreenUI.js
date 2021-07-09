@@ -29,7 +29,7 @@ const loginScreenUI = ({navigation})=>{
 
          <TouchableOpacity activeOpacity = {0.5}   onPress = {()=> Auth.signIn(email, password)} >
          <Text style = {{  fontSize : widthToDp(4.5) , height : 47 , width : widthToDp(29) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", paddingTop : 11, paddingLeft : widthToDp(6.5), borderRadius : 9, fontWeight : "bold", marginTop : heightToDp(15)}}> Sign In</Text> 
+         alignSelf :"center", paddingTop : 11, paddingLeft : widthToDp(6), borderRadius : 9, fontWeight : "bold", marginTop : heightToDp(15)}}> Sign In</Text> 
          </TouchableOpacity>
         <Text style = {{color : "#D1D1D1", fontSize : 14, alignSelf :"center", marginTop :heightToDp(7)}} >Don't have an account ? </Text>
         <TouchableOpacity activeOpacity={0.3}  onPress = {() => navigation.navigate("ConfirmedOrder")} >

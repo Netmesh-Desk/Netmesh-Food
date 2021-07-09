@@ -38,8 +38,8 @@ const ConfirmedOrder = ({navigation})=>{
 
 
          <TouchableOpacity activeOpacity = {0.5} onPress = {()=> Auth.signUp(userName,email,password)} >
-         <Text style = {{  fontSize : widthToDp(4.5) , height : heightToDp(6.8) , width : widthToDp(27) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
-         alignSelf :"center", paddingTop : heightToDp(1.49), paddingLeft : 18, borderRadius : 9, fontWeight : "bold", marginTop : heightToDp(14)}}> Sign Up</Text> 
+         <Text style = {{  fontSize : widthToDp(4.5) , height : heightToDp(6.5) , width : widthToDp(29) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
+         alignSelf :"center", paddingTop : heightToDp(1.6), paddingLeft : 19, borderRadius : 9, fontWeight : "bold", marginTop : heightToDp(14)}}> Sign Up</Text> 
          </TouchableOpacity>
         <Text style = {{color : "#D1D1D1", fontSize : 14, alignSelf :"center", marginTop :heightToDp(5.8)}} >Already have an account ? </Text>
         <TouchableOpacity activeOpacity={0.3}  onPress = {() => navigation.navigate("loginScreenUI")} >

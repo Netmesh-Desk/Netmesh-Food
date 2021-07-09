@@ -19,10 +19,10 @@ const signUp = (fullName, email, password) => {
 
         return uid
     })
-    .then( uid => createUserInDb(uid, fullName, email))
-    .catch(
-        err => Alert.alert(err.code, err.message)
-    )
+    // .then( uid => createUserInDb(uid, fullName, email))
+    // .catch(
+    //     err => Alert.alert(err.code, err.message)
+    // )
 }
 
 const signIn = (email, password) => {
@@ -37,9 +37,14 @@ const signIn = (email, password) => {
     )
 }
 
+const signOut = ()=>{
+    return auth().signOut()
+}
+
 const Auth = {
     signIn,
     signUp,
+    signOut
 }
 
 export default Auth;
