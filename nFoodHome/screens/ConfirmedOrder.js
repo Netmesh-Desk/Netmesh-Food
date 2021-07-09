@@ -1,20 +1,16 @@
 import React , {useState} from 'react';
 import {Text, View, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
 import { widthToDp, heightToDp } from './dimension';
-import {signUp} from '../src/action/auth'
 import Home from './Home';
+import Auth from './src/action/auth'
 
-const ConfirmedOrder = ({navigation, signUp})=>{
+
+const ConfirmedOrder = ({navigation})=>{
   
+    const [ userName, setUserName ]= useState()
+    const [ email, setEmail ] = useState()
+    const [ password, setPassword ] = useState()
     
-        const [name1, setName] = useState('')
-        const [email, setEmail] = useState('')
-        const [password, setPassword] = useState('')
-
-
-        const doSignUp = async () => {
-            signUp({name1, email, password})
-        }
 
     return(
         <>
@@ -24,21 +20,24 @@ const ConfirmedOrder = ({navigation, signUp})=>{
         <Text style = {{color :"#E1E1E1", fontSize : widthToDp(4.3), marginLeft: widthToDp(7)}}>Sign Up to get started!</Text>
 
 
-         <TextInput placeholder = "Name" placeholderTextColor= "#D1D1D1" keyboardType = "name-phone-pad" onChangeText = {(text) => setName(text)} value={name1}
+         <TextInput placeholder = "Name" placeholderTextColor= "#D1D1D1" keyboardType = "name-phone-pad" 
+         onChangeText = {(e) => setUserName(e)} value= {userName}
          style = {{color : "#FFF", width : widthToDp(74) , height : heightToDp(5.8) , borderWidth : 2 , borderColor : "#19480B" , marginTop : heightToDp(14),  alignSelf : "center", borderRadius : 16, paddingLeft : 20, paddingTop : 10}}></TextInput>
 
 
-         <TextInput placeholder = "Email" placeholderTextColor= "#D1D1D1" keyboardType = "email-address"  onChangeText={(text) => setEmail(text)} value = {email}
+         <TextInput placeholder = "Email" placeholderTextColor= "#D1D1D1" keyboardType = "email-address"  
+         onChangeText={(e) => setEmail(e)} value = {email}
          style = {{color : "#FFF", width : widthToDp(74) , height : heightToDp(5.8) , borderWidth : 2 , borderColor : "#19480B" , marginTop : heightToDp(5),  alignSelf : "center", borderRadius : 16, paddingLeft : 20, paddingTop : 10}}></TextInput>
 
 
-         <TextInput placeholder = "Password" placeholderTextColor= "#D1D1D1" keyboardType = "visible-password" secureTextEntry = {true} onChangeText = { (text) => setPassword(text) } value = {password}
+         <TextInput placeholder = "Password" placeholderTextColor= "#D1D1D1"  secureTextEntry = {true} 
+         onChangeText = { (e) => setPassword(e) } value = {password}
          style = {{color : "#FFF", width : widthToDp(74) , height : heightToDp(5.8) , borderWidth : 2 ,
         borderColor : "#19480B" , marginTop : heightToDp(5),  alignSelf : "center", borderRadius : 16,
         paddingLeft : 20, paddingTop : 10}}></TextInput>
 
 
-         <TouchableOpacity activeOpacity = {0.5} onPress = {()=> {navigation.navigate(Home)}} >
+         <TouchableOpacity activeOpacity = {0.5} onPress = {()=> Auth.signUp(userName,email,password)} >
          <Text style = {{  fontSize : widthToDp(4.5) , height : heightToDp(6.8) , width : widthToDp(27) , color : "#FFF", borderWidth : 1 , borderColor :"#1FAA08", backgroundColor : "#0B4801" ,
          alignSelf :"center", paddingTop : heightToDp(1.49), paddingLeft : 18, borderRadius : 9, fontWeight : "bold", marginTop : heightToDp(14)}}> Sign Up</Text> 
          </TouchableOpacity>
